@@ -1,0 +1,270 @@
+#ifndef INTERRUPTS_ACFG_H
+#   define INTERRUPTS_ACFG_H
+/*===========================================================================*/
+/**
+ * @file interrupts_acfg.h
+ *
+ * %full_filespec: interrupts_acfg.h.txt-1:Text:kok_aud#1 %
+ * @version %version: 1 %
+ * @author  %derived_by: jz4fpf %
+ * @date    %date_modified: Fri May  4 15:53:21 2007 %
+ *
+ *---------------------------------------------------------------------------
+ *
+ * Copyright 2006 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *---------------------------------------------------------------------------
+ *
+ * @brief Micro specific (SH2A) types for Standard Interrupts APIs
+ *
+ * DESCRIPTION :
+ *    This file defines the micro specific interrupts types for SH2A
+ *       - Interrupt_ID_T          - Interrupt source
+ *       - Interrupt_Config_T      - interrupt configuration information (priority, etc)
+ *
+ * ABBREVIATIONS:
+ *
+ * TRACEABILITY INFO:
+ *   - Design Document(s):
+ *     - REJ09B0290-0050 Renesas SH7263 Group Hardware Manual
+ *
+ *   - Requirements Document(s):
+ *     - @todo Update list of requirements document(s)
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]
+ *
+ * DEVIATIONS FROM STANDARDS:
+ *    - None
+ *
+ */
+/*==========================================================================*/
+
+#error "THIS IS A TEMPLATE CFG FILE. PLEASE CONFIGURE FOR YOUR SYSTEM."
+
+/*===========================================================================*\
+ * Header Files
+\*===========================================================================*/
+#   include "itron.h"
+#   include "kernel.h"
+#   include "kernel_id.h"
+#   include "kernel_sys.h"
+#   include "kernel_cfg_main.h"
+#include "iodefine.h"
+
+/*===========================================================================*\
+ * Exported Preprocessor #define Constants
+\*===========================================================================*/
+
+/* SH2A Interrupt Priority limits */
+#define  INT_PRI_MIN 0x0
+#define  INT_PRI_MAX 0xF
+
+/*===========================================================================*\
+ * Exported Preprocessor #define MACROS
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Exported Type Declarations
+\*===========================================================================*/
+
+/**
+ * Interrupt Mode
+ *  - For General Interrupts, usually fixed by the interrupt source.
+ *  - For GPIO Interrupts, If Mode is undefined, maps to Disable.
+ */
+typedef enum Interrupt_Mode_Tag
+{
+   INT_DISABLE,
+   INT_LEVEL_LOW,
+   INT_LEVEL_HIGH,
+   INT_EDGE_FALL,
+   INT_EDGE_RISE,
+   INT_EDGE_BOTH,
+   INT_SPECIAL,
+   INT_MODE_NUM_VALUES     /* Number of different Interrupt mode */
+} Interrupt_Mode_T;
+
+/**
+ * Interrupt Configuration parameters
+ *    - Priority
+ *    - Mode
+ *    - Interrupt Service Routine Address
+ */
+typedef struct Interrupt_Config_Tag
+{
+   uint8_t priority;
+   Interrupt_Mode_T mode;
+   void *isr_addr;
+} Interrupt_Config_T;
+
+/**
+ * IDs for all interrupt sources
+ */
+typedef enum Interrupt_ID_Tag
+{
+   INTVECT_NMI = 11,              /**<  11  - Non Maskable Interrupt */
+   INTVECT_USER_BREAK = 12,       /**<  12  - User BreakHECC */
+   INTVECT_H_UDI = 14,            /**<  14  - User debugging Interface */
+   INTVECT_IRQ0 = 64,             /**<  64  - IRQ0 Interrupt */
+   INTVECT_IRQ1 = 65,             /**<  65  - IRQ1 Interrupt */
+   INTVECT_IRQ2 = 66,             /**<  66  - IRQ2 Interrupt */
+   INTVECT_IRQ3 = 67,             /**<  67  - IRQ3 Interrupt */
+   INTVECT_IRQ4 = 68,             /**<  68  - IRQ4 Interrupt */
+   INTVECT_IRQ5 = 69,             /**<  69  - IRQ5 Interrupt */
+   INTVECT_IRQ6 = 70,             /**<  70  - IRQ6 Interrupt */
+   INTVECT_IRQ7 = 71,             /**<  71  - IRQ7 Interrupt */
+   INTVECT_PINT0 = 80,            /**<  80  - PINT0 Interrupt */
+   INTVECT_PINT1 = 81,            /**<  81  - PINT1 Interrupt */
+   INTVECT_PINT2 = 82,            /**<  82  - PINT2 Interrupt */
+   INTVECT_PINT3 = 83,            /**<  83  - PINT3 Interrupt */
+   INTVECT_PINT4 = 84,            /**<  84  - PINT4 Interrupt */
+   INTVECT_PINT5 = 85,            /**<  85  - PINT5 Interrupt */
+   INTVECT_PINT6 = 86,            /**<  86  - PINT6 Interrupt */
+   INTVECT_PINT7 = 87,            /**<  87  - PINT7 Interrupt */
+   INTEVT_DEI0 = 108,             /**<  108 - DMA0 Transfer End Interrupt */
+   INTEVT_HEI0 = 109,             /**<  109 - DMA0 Transfer Half-End Interrupt */
+   INTEVT_DEI1 = 112,             /**<  112 - DMA1 Transfer End Interrupt */
+   INTEVT_HEI1 = 113,             /**<  113 - DMA1 Transfer Half-End Interrupt */
+   INTEVT_DEI2 = 116,             /**<  116 - DMA2 Transfer End Interrupt */
+   INTEVT_HEI2 = 117,             /**<  117 - DMA2 Transfer Half-End Interrupt */
+   INTEVT_DEI3 = 120,             /**<  120 - DMA3 Transfer End Interrupt */
+   INTEVT_HEI3 = 121,             /**<  121 - DMA3 Transfer Half-End Interrupt */
+   INTEVT_DEI4 = 124,             /**<  124 - DMA4 Transfer End Interrupt */
+   INTEVT_HEI4 = 125,             /**<  125 - DMA4 Transfer Half-End Interrupt */
+   INTEVT_DEI5 = 128,             /**<  128 - DMA5 Transfer End Interrupt */
+   INTEVT_HEI5 = 129,             /**<  129 - DMA5 Transfer Half-End Interrupt */
+   INTEVT_DEI6 = 132,             /**<  132 - DMA6 Transfer End Interrupt */
+   INTEVT_HEI6 = 133,             /**<  133 - DMA6 Transfer Half-End Interrupt */
+   INTEVT_DEI7 = 136,             /**<  136 - DMA7 Transfer End Interrupt */
+   INTEVT_HEI7 = 137,             /**<  137 - DMA7 Transfer Half-End Interrupt */
+   INTVECT_USB = 140,             /**<  140 - USB Controller Interrupt */
+   INTVECT_LCD = 141,             /**<  141 - LCD Controller Interrupt */
+   INTVECT_CMT_CMI0 = 142,        /**<  142 - Compare Match Timer Channel0 */
+   INTVECT_CMT_CMI1 = 143,        /**<  143 - Compare Match Timer Channel1 */
+   INTVECT_BSC_CMI = 144,         /**<  144 - Bus State Controller Compare Match Interrupt */
+   INTVECT_WDT = 145,             /**<  145 - Watchdog Timer interval Timer Interrupt */
+   INTVECT_MTU0_TGI0A = 146,      /**<  146 - Multifunction Timer Unit2-0 TGRA Input Capture/Compare Match */
+   INTVECT_MTU0_TGI0B = 147,      /**<  147 - Multifunction Timer Unit2-0 TGRB Input Capture/Compare Match */
+   INTVECT_MTU0_TGI0C = 148,      /**<  148 - Multifunction Timer Unit2-0 TGRC Input Capture/Compare Match */
+   INTVECT_MTU0_TGI0D = 149,      /**<  149 - Multifunction Timer Unit2-0 TGRD Input Capture/Compare Match */
+   INTVECT_MTU0_TCI0V = 150,      /**<  150 - Multifunction Timer Unit2-0 TCNT Overflow */
+   INTVECT_MTU0_TGI0E = 151,      /**<  151 - Multifunction Timer Unit2-0 TGRE Compare Match */
+   INTVECT_MTU0_TGI0F = 152,      /**<  152 - Multifunction Timer Unit2-0 TGRF Compare Match */
+   INTVECT_MTU1_TGI1A = 153,      /**<  153 - Multifunction Timer Unit2-1 TGRA Input Capture/Compare Match */
+   INTVECT_MTU1_TGI1B = 154,      /**<  154 - Multifunction Timer Unit2-1 TGRB Input Capture/Compare Match */
+   INTVECT_MTU1_TCI1V = 155,      /**<  155 - Multifunction Timer Unit2-1 TCNT Overflow */
+   INTVECT_MTU1_TCI1U = 156,      /**<  156 - Multifunction Timer Unit2-1 TCNT Underflow */
+   INTVECT_MTU2_TGI2A = 157,      /**<  157 - Multifunction Timer Unit2-2 TGRA Input Capture/Compare Match */
+   INTVECT_MTU2_TGI2B = 158,      /**<  158 - Multifunction Timer Unit2-2 TGRB Input Capture/Compare Match */
+   INTVECT_MTU2_TCI2V = 159,      /**<  159 - Multifunction Timer Unit2-2 TCNT Overflow */
+   INTVECT_MTU2_TCI2U = 160,      /**<  160 - Multifunction Timer Unit2-2 TCNT Underflow */
+   INTVECT_MTU3_TGI3A = 161,      /**<  161 - Multifunction Timer Unit2-3 TGRA Input Capture/Compare Match */
+   INTVECT_MTU3_TGI3B = 162,      /**<  162 - Multifunction Timer Unit2-3 TGRB Input Capture/Compare Match */
+   INTVECT_MTU3_TGI3C = 163,      /**<  163 - Multifunction Timer Unit2-3 TGRC Input Capture/Compare Match */
+   INTVECT_MTU3_TGI3D = 164,      /**<  164 - Multifunction Timer Unit2-3 TGRD Input Capture/Compare Match */
+   INTVECT_MTU3_TCI3V = 165,      /**<  165 - Multifunction Timer Unit2-3 TCNT Overflow */
+   INTVECT_MTU4_TGI4A = 166,      /**<  166 - Multifunction Timer Unit2-4 TGRA Input Capture/Compare Match */
+   INTVECT_MTU4_TGI4B = 167,      /**<  167 - Multifunction Timer Unit2-4 TGRB Input Capture/Compare Match */
+   INTVECT_MTU4_TGI4C = 168,      /**<  168 - Multifunction Timer Unit2-4 TGRC Input Capture/Compare Match */
+   INTVECT_MTU4_TGI4D = 169,      /**<  169 - Multifunction Timer Unit2-4 TGRD Input Capture/Compare Match */
+   INTVECT_MTU4_TCI4V = 170,      /**<  170 - Multifunction Timer Unit2-4 TCNT Overflow */
+   INTVECT_ADC = 171,             /**<  171 - A to D Converter Interrupt */
+   INTVECT_IIC0_STPI = 172,       /**<  172 - IIC3 Channel0 Stop */
+   INTVECT_IIC0_NAKI = 123,       /**<  173 - IIC3 Channel0 Acknowledge detected */
+   INTVECT_IIC0_RXI = 174,        /**<  174 - IIC3 Channel0 Receive data full */
+   INTVECT_IIC0_TXI = 175,        /**<  175 - IIC3 Channel0 Transmit data empty */
+   INTVECT_IIC0_TEI = 176,        /**<  176 - IIC3 Channel0 Transmit End */
+   INTVECT_IIC1_STPI = 177,       /**<  177 - IIC3 Channel1 Stop */
+   INTVECT_IIC1_NAKI = 178,       /**<  178 - IIC3 Channel1 Acknowledge detected */
+   INTVECT_IIC1_RXI = 179,        /**<  179 - IIC3 Channel1 Receive data full */
+   INTVECT_IIC1_TXI = 180,        /**<  180 - IIC3 Channel1 Transmit data empty */
+   INTVECT_IIC1_TEI = 181,        /**<  181 - IIC3 Channel1 Transmit End */
+   INTVECT_IIC2_STPI = 182,       /**<  182 - IIC3 Channel2 Stop */
+   INTVECT_IIC2_NAKI = 183,       /**<  183 - IIC3 Channel2 Acknowledge detected */
+   INTVECT_IIC2_RXI = 184,        /**<  184 - IIC3 Channel2 Receive data full */
+   INTVECT_IIC2_TXI = 185,        /**<  185 - IIC3 Channel2 Transmit data empty */
+   INTVECT_IIC2_TEI = 186,        /**<  186 - IIC3 Channel2 Transmit End */
+   INTVECT_IIC3_STPI = 187,       /**<  187 - IIC3 Channel3 Stop */
+   INTVECT_IIC3_NAKI = 188,       /**<  188 - IIC3 Channel3 Acknowledge detected */
+   INTVECT_IIC3_RXI = 189,        /**<  189 - IIC3 Channel3 Receive data full */
+   INTVECT_IIC3_TXI = 190,        /**<  190 - IIC3 Channel3 Transmit data empty */
+   INTVECT_IIC3_TEI = 191,        /**<  191 - IIC3 Channel3 Transmit End */
+   INTVECT_SCIF0_BRI = 192,       /**<  192 - SCIF Channel0 Break/Overrun Error */
+   INTVECT_SCIF0_ERI = 193,       /**<  193 - SCIF Channel0 Receive Error */
+   INTVECT_SCIF0_RXI = 194,       /**<  194 - SCIF Channel0 Receive FIFO Full */
+   INTVECT_SCIF0_TXI = 195,       /**<  195 - SCIF Channel0 Transmit FIFO Empty */
+   INTVECT_SCIF1_BRI = 196,       /**<  196 - SCIF Channel1 Break/Overrun Error */
+   INTVECT_SCIF1_ERI = 197,       /**<  197 - SCIF Channel1 Receive Error */
+   INTVECT_SCIF1_RXI = 198,       /**<  198 - SCIF Channel1 Receive FIFO Full */
+   INTVECT_SCIF1_TXI = 199,       /**<  199 - SCIF Channel1 Transmit FIFO Empty */
+   INTVECT_SCIF2_BRI = 200,       /**<  200 - SCIF Channel2 Break/Overrun Error */
+   INTVECT_SCIF2_ERI = 201,       /**<  201 - SCIF Channel2 Receive Error */
+   INTVECT_SCIF2_RXI = 202,       /**<  202 - SCIF Channel2 Receive FIFO Full */
+   INTVECT_SCIF2_TXI = 203,       /**<  203 - SCIF Channel2 Transmit FIFO Empty */
+   INTVECT_SCIF3_BRI = 204,       /**<  204 - SCIF Channel3 Break/Overrun Error */
+   INTVECT_SCIF3_ERI = 205,       /**<  205 - SCIF Channel3 Receive Error */
+   INTVECT_SCIF3_RXI = 206,       /**<  206 - SCIF Channel3 Receive FIFO Full */
+   INTVECT_SCIF3_TXI = 207,       /**<  207 - SCIF Channel3 Transmit FIFO Empty */
+   INTVECT_SSU0_SSERI0 = 208,     /**<  208 - Synchronous Serial Comm Unit Channel0 Error */
+   INTVECT_SSU0_SSRXI0 = 209,     /**<  209 - Synchronous Serial Comm Unit Channel0 Receive Register Full */
+   INTVECT_SSU0_SSTXI0 = 210,     /**<  210 - Synchronous Serial Comm Unit Channel0 Transmit Register Empty */
+   INTVECT_SSU1_SSERI1 = 211,     /**<  211 - Synchronous Serial Comm Unit Channel1 Error */
+   INTVECT_SSU1_SSRXI1 = 212,     /**<  212 - Synchronous Serial Comm Unit Channel1 Receive Register Full */
+   INTVECT_SSU1_SSTXI1 = 213,     /**<  213 - Synchronous Serial Comm Unit Channel1 Transmit Register Empty */
+   INTVECT_SSI_0 = 214,           /**<  214 - Serial Sound Interface Channel0 */
+   INTVECT_SSI_1 = 215,           /**<  215 - Serial Sound Interface Channel1 */
+   INTVECT_SSI_2 = 216,           /**<  216 - Serial Sound Interface Channel2 */
+   INTVECT_SSI_3 = 217,           /**<  217 - Serial Sound Interface Channel3 */
+   ROM_DEC_ISY_INTVEC = 218,      /**<  218 - CD-ROM Decode Sync Code Abnormal Timing */
+   ROM_DEC_IERR_INTVEC = 219,     /**<  219 - CD-ROM Decode Error not Corrected by ECC */
+   ROM_DEC_ITARG_INTVEC = 220,    /**<  220 - CD-ROM Decode Not The Expected Target Sector */
+   ROM_DEC_ISEC_INTVEC = 221,     /**<  221 - CD-ROM Decode Transation from Sector to Sector */
+   ROM_DEC_IBUF_INTVEC = 222,     /**<  222 - CD-ROM Decode State Change in Data Transfer to Buffer */
+   ROM_DEC_IREADY_INTVEC = 223,   /**<  223 - CD-ROM Decode Request for Data Transfer */
+   INTVECT_FLCTL_FLSTEI = 224,    /**<  224 - Flash Memory Controller Error */
+   INTVECT_FLCTL_FLTENDI = 225,   /**<  225 - Flash Memory Controller Transfer End */
+   INTVECT_FLCTL_FLTREQ0I = 226,  /**<  226 - Flash Memory Controller FIFO0 Transfer Request */
+   INTVECT_FLCTL_FLTREQ1I = 227,  /**<  227 - Flash Memory Controller FIFO1 Transfer Request */
+   INTVECT_SDHI3 = 228,           /**<  228 - SD Host Interface 3 */
+   INTVECT_SDHI0 = 229,           /**<  229 - SD Host Interface 0 */
+   INTVECT_SDHI1 = 230,           /**<  230 - SD Host Interface 1 */
+   INTVECT_RTC_ARM = 231,         /**<  231 - Real Time Clock Alarm */
+   INTVECT_RTC_PRD = 232,         /**<  232 - Real Time Clock Periodic */
+   INTVECT_RTC_CUP = 233,         /**<  233 - Real Time Clock Carry */
+   INTVECT_RCAN0_ERS0 = 234,      /**<  234 - CAN Channel0 Errors */
+   INTVECT_RCAN0_OVR0 = 235,      /**<  235 - CAN Channel0 Overruns and Compares */
+   INTVECT_RCAN0_RM00 = 236,      /**<  236 - CAN Channel0 Data Frame Reception */
+   INTVECT_RCAN0_RM10 = 237,      /**<  237 - CAN Channel0 Remote Frame Reception */
+   INTVECT_RCAN0_SLE0 = 238,      /**<  238 - CAN Channel0 Slot Empty, Transmission Disabled */
+   INTVECT_RCAN0_ERS1 = 239,      /**<  239 - CAN Channel1 Errors */
+   INTVECT_RCAN0_OVR1 = 240,      /**<  240 - CAN Channel1 Overruns and Compares */
+   INTVECT_RCAN0_RM01 = 241,      /**<  241 - CAN Channel1 Data Frame Reception */
+   INTVECT_RCAN0_RM11 = 242,      /**<  242 - CAN Channel1 Remote Frame Reception */
+   INTVECT_RCAN0_SLE1 = 243,      /**<  243 - CAN Channel1 Slot Empty, Transmission Disabled */
+   SRC_OVF_INTVEC = 244,          /**<  244 - Sampling Rate Converter Output Data FIFO Overwrite */
+   SRC_ODF_INTVEC = 245,          /**<  245 - Sampling Rate Converter Output Data FIFO Full */
+   SRC_IDE_INTVEC = 246,          /**<  246 - Sampling Rate Converter Input Data FIFO Empty */
+   INTVECT_IEBI = 247             /**<  247 - IE Bus Controller Interrupt */
+} Interrupt_ID_T;
+
+
+/*===========================================================================*\
+ * File Revision History (top to bottom: first revision to last revision)
+ *===========================================================================
+ *
+ * Date        userid    (Description on following lines: SCR #, etc)
+ * ----------- --------
+ *
+ * 2007-03-07  LKO
+ * + Moved Interrupt_Mode and Interrupt_Config definitions to interrupts_acfg.h.
+ *
+ * 2007-01-26  LKO
+ * + Adapted for Renesas SH7263.
+ *
+ * 26-10-06    DDC
+ * + Created initial file.
+ *
+\*===========================================================================*/
+#endif /* INTERRUPTS_ACFG_H */

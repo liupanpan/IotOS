@@ -1,0 +1,43 @@
+'ID, ID,SAL_Event_Id_T,Type,Event Description
+0x0, 0, SAL_EVG_FIRST_PUBLISHED_EVENT_ID, Reserved, First Published Event ID
+0x1, 1, EV_START_APP, Publish :, Request startup of application
+0x2, 2, EV_APP_INITIALIZED, Publish :, Application has started
+0x3, 3, EV_SHUTDOWN_APP, Publish :, Request shutdown of application
+0x4, 4, EV_PROCESS_EXIT, Publish :, Process exited
+0x5, 5, EV_APP_EXIT, Publish :, Application is exiting
+0x6, 6, EV_APP_TIMEOUT, Publish :, Procman application timed out
+0x7, 7, EV_SYSTEM_SHUTDOWN, Publish :, Shut down system gracefully
+0x8, 8, EV_SET_SYSTEM_CONFIG, Publish :, Change system configuration
+0x9, 9, EV_SYSTEM_CONFIG_REACHED, Publish :, System configuration reached
+0xA, 10, EV_ADD_SYSTEM_CONFIG, Publish :, Add system configuration
+0xB, 11, EV_APP_TERMINATED, Publish :, Event from Proc Mgr to Sys Mgr on abnormal termination of App.
+0xC, 12, EV_APP_SPAWN_SUCCESS, Publish :, Process spawn was successful
+0xD, 13, EV_APP_SPAWN_FAIL, Publish :, Process spawn was not successful
+0xE, 14, EV_APP_STATE, Publish :, Report state of application
+0xF, 15, EV_GET_APP_STATE, Publish :, Get state of application
+0x10, 16, TEST_EVG_SAL_MESSAGE, Publish :, 
+0x11, 17, TEST_EVG_SAL_STOP_ACTIVE_OBJECT, Publish :, 
+0x12, 18, TEST_EVG_MSG1, Publish :, 
+0x13, 19, TEST_EVG_1, Publish :, 
+0x14, 20, TEST_EVG_2, Publish :, 
+0x15, 21, TEST_EVG_3, Publish :, 
+0x16, 22, TEST_EVG_4, Publish :, 
+0x17, 23, TEST_EVG_5, Publish :, 
+0x18, 24, TEST_EVG_6, Publish :, 
+0x19, 25, TEST_EVG_7, Publish :, 
+0x1A, 26, TEST_EVG_8, Publish :, 
+0x1B, 27, TEST_EVG_9, Publish :, 
+0x1C, 28, TEST_EVG_REC_PASS, Publish :, 
+0x1D, 29, TEST_EVG_ERROR, Publish :, 
+0x1E, 30, TEST_EVG_STOP, Publish :, 
+0x1F, 31, TEST_EVG_READY, Publish :, 
+0x20, 32, TEST_EVG_REMOTE_SENDER_READY, Publish :, 
+0x21, 33, TEST_EVG_REMOTE_RECEIVER_READY, Publish :, 
+0x22, 34, TEST_SEND_EV1, Publish :, 
+0x23, 35, TEST_SEND_EV2, Publish :, 
+0x24, 36, TEST_SEND_EV3, Publish :, 
+0x25, 37, TEST_SEND_EV4, Publish :, 
+0x26, 38, TEST_SEND_EV5, Publish :, 
+0x27, 39, SAL_EVG_LAST_PUBLISHED_EVENT_ID, Reserved, Last Published Event ID
+0x28, 40, SAL_EV_FIRST_PRIVATE_ID, Reserved, First Private Event ID
+0x29, 41, EV_TIMER_1, Private :, Procman time base event.

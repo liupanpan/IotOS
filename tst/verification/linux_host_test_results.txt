@@ -1,0 +1,412 @@
+[1431948144.220732] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948144.220843] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948144.258693] 2:0; test_alloc_free.c:74; INFO_HI - Test PASSED
+
+[1431948144.262850] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.262938] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.264402] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.264706] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.267391] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.267415] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.267579] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.269469] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.272423] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.272443] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.272552] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.272562] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.277382] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.277407] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.277411] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.278041] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.279685] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.279726] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.279780] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.279808] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.282132] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.282157] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.282214] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.282284] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.283037] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.283055] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.283075] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.283164] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.284625] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.284646] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.284661] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.284733] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.287243] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.287266] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.287289] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.287338] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.289684] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.289776] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.291985] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.292213] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.293440] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.293838] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.294366] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.294613] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.299119] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.299321] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.299952] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.300007] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.302596] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.304334] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.304514] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1431948144.306249] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1431948144.260637] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948144.260727] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948144.306728] 2:0; test_buffer_pool.c:521; INFO_HI - Test PASSED
+[1431948144.308235] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948144.308299] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948144.424392] 2:0; test_clock.c:85; INFO_HI - Test PASSED
+
+[1431948144.425857] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948144.425919] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948144.442594] 2:0; test_message_queue.c:975; INFO_HI - Test PASSED
+[1431948146.554455] 2:6; xsal_mutex_linux.c:246; WARN - SAL_Lock_Mutex_Timeout - Timed out after 100 mS. Mutex Owner: 5
+[1431948144.443920] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948144.443982] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948144.444089] 2:0; test_mutex.c:1611; INFO_HI - Mutex Test Suite
+[1431948151.171840] 2:0; test_mutex.c:1264; INFO_HI - Start Share Mutex Test at Priority 25
+[1431948153.992191] 2:0; test_mutex.c:1264; INFO_HI - Start Share Mutex Test at Priority 60
+[1431948156.784919] 2:0; test_mutex.c:1794; INFO_HI - Test PASSED
+[1431948156.789985] 2:5; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1431948156.804419] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 8 Size: 17
+[1431948156.804463] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 8 Size: 17
+[1431948156.804468] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 4 Event: 8 Size: 17
+[1431948156.804472] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 5 Event: 8 Size: 17
+[1431948156.786230] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948156.786288] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948156.789884] 2:1; test_publish.c:1016; INFO_HI - Subscribe/Unsubscribe to empty lists worked.
+[1431948156.789944] 2:2; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec2]: Start
+[1431948156.789970] 2:3; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec3]: Start
+[1431948156.790045] 2:5; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec5]: Start
+[1431948156.790080] 2:4; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec4]: Start
+[1431948156.791971] 2:1; test_publish.c:839; INFO_HI - Publish_Test 1 Ok
+[1431948156.792014] 2:5; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec5]: Stop, ret = 0
+[1431948156.792018] 2:5; test_publish.c:690; INFO_HI - Receive_Test 2_2[LRec5]: Start
+[1431948156.792241] 2:2; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec2]: Stop, ret = 0
+[1431948156.792247] 2:2; test_publish.c:690; INFO_HI - Receive_Test 2_1[LRec2]: Start
+[1431948156.792526] 2:3; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec3]: Stop, ret = 0
+[1431948156.792532] 2:3; test_publish.c:690; INFO_HI - Receive_Test 2_2[LRec3]: Start
+[1431948156.792629] 2:4; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec4]: Stop, ret = 0
+[1431948156.792633] 2:4; test_publish.c:690; INFO_HI - Receive_Test 2_1[LRec4]: Start
+[1431948156.794555] 2:1; test_publish.c:839; INFO_HI - Publish_Test 2 Ok
+[1431948156.794587] 2:3; test_publish.c:752; INFO_HI - Receive_Test2_2[LRec3]: Stop, ret = 0
+[1431948156.794592] 2:3; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec3]: Start
+[1431948156.794835] 2:5; test_publish.c:752; INFO_HI - Receive_Test2_2[LRec5]: Stop, ret = 0
+[1431948156.794840] 2:5; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec5]: Start
+[1431948156.796873] 2:2; test_publish.c:752; INFO_HI - Receive_Test2_1[LRec2]: Stop, ret = 0
+[1431948156.796879] 2:2; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec2]: Start
+[1431948156.796881] 2:4; test_publish.c:752; INFO_HI - Receive_Test2_1[LRec4]: Stop, ret = 0
+[1431948156.796887] 2:4; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec4]: Start
+[1431948156.799531] 2:2; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec2]: Stop, ret = 0
+[1431948156.799539] 2:2; test_publish.c:690; INFO_HI - Receive_Test 4_1[LRec2]: Start
+[1431948156.799552] 2:1; test_publish.c:839; INFO_HI - Publish_Test 3 Ok
+[1431948156.799890] 2:5; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec5]: Stop, ret = 0
+[1431948156.799895] 2:5; test_publish.c:690; INFO_HI - Receive_Test 4_2[LRec5]: Start
+[1431948156.801780] 2:4; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec4]: Stop, ret = 0
+[1431948156.801786] 2:4; test_publish.c:690; INFO_HI - Receive_Test 4_1[LRec4]: Start
+[1431948156.801850] 2:3; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec3]: Stop, ret = 0
+[1431948156.801856] 2:3; test_publish.c:690; INFO_HI - Receive_Test 4_2[LRec3]: Start
+[1431948156.801995] 2:3; test_publish.c:752; INFO_HI - Receive_Test4_2[LRec3]: Stop, ret = 0
+[1431948156.801999] 2:3; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec3]: Start
+[1431948156.802082] 2:2; test_publish.c:752; INFO_HI - Receive_Test4_1[LRec2]: Stop, ret = 0
+[1431948156.802087] 2:2; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec2]: Start
+[1431948156.802157] 2:1; test_publish.c:839; INFO_HI - Publish_Test 4 Ok
+[1431948156.802160] 2:5; test_publish.c:752; INFO_HI - Receive_Test4_2[LRec5]: Stop, ret = 0
+[1431948156.802164] 2:5; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec5]: Start
+[1431948156.802165] 2:4; test_publish.c:752; INFO_HI - Receive_Test4_1[LRec4]: Stop, ret = 0
+[1431948156.802167] 2:4; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec4]: Start
+[1431948156.804484] 2:2; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec2]: Stop, ret = 0
+[1431948156.804487] 2:2; test_publish.c:690; INFO_HI - Receive_Test 6_1[LRec2]: Start
+[1431948156.804545] 2:3; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec3]: Stop, r[1431948156.806873] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948156.806894] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948156.806899] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948156.806903] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+et = 0
+[1431948156.804569] 2:3; test_publish.c:690; INFO_HI - Receive_Test 6_2[LRec3]: Start
+[1431948156.804683] 2:1; test_publish.c:839; INFO_HI - Publish_Test 5 Ok
+[1431948156.804693] 2:4; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec4]: Stop, ret = 0
+[1431948156.804695] 2:4; test_publish.c:690; INFO_HI - Receive_Test 6_1[LRec4]: Start
+[1431948156.804822] 2:5; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec5]: Stop, ret = 0
+[1431948156.804827] 2:5; test_publish.c:690; INFO_HI - Receive_Test 6_2[LRec5]: Start
+[1431948156.806914] 2:2; test_publish.c:752; INFO_HI - Receive_Test6_1[LRec2]: Stop, ret = 0
+[1431948156.806993] 2:3; test_publish.c:752; INFO_HI - Receive_Test6_2[LRec3]: Stop, ret = 0
+[1431948156.807072] 2:1; test_publish.c:839; INFO_HI - Publish_Test 6 Ok
+[1431948156.807145] 2:4; test_publish.c:752; INFO_HI - Receive_Test6_1[LRec4]: Stop, ret = 0
+[1431948156.807216] 2:5; test_publish.c:752; INFO_HI - Receive_Test6_2[LRec5]: Stop, ret = 0
+[1431948156.809078] 2:0; test_publish.c:1859; INFO_HI - Test PASSED
+[1431948156.816888] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 0
+[1431948156.816926] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 0
+[1431948156.816931] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 0
+[1431948156.816935] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 0
+[1431948156.824457] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 3 Size: 0
+[1431948156.824494] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 1
+[1431948156.829342] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1431948156.829375] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 2
+[1431948156.829382] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1431948156.829386] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 2
+[1431948156.836825] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1431948156.836858] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 3
+[1431948156.836863] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1431948156.836867] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 3
+[1431948156.810383] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948156.810445] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948156.837516] 2:0; test_publish_callback.c:1701; INFO_HI - Test PASSED
+[1431948156.838959] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948156.839023] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948161.576842] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 502 for event 40
+[1431948162.077343] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 501 for event 43
+[1431948163.077973] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 1000 for event 43
+[1431948163.580345] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 502 for event 40
+[1431948164.585291] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 1004 for event 45
+[1431948165.085389] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 501 for event 47
+[1431948165.086347] 2:0; test_receive_only.c:1437; INFO_HI - Test PASSED
+[1431948165.087808] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948165.087866] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948172.110359] 2:0; test_semaphore.c:900; INFO_HI - Test PASSED
+[1431948172.119039] 2:7; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1431948172.119452] 2:4; xsal_send.c:98; FAULT - Dropped Local Send TID: 3 Event: 5 Data: 0 Size: 0
+[1431948172.119481] 2:2; xsal_send.c:98; FAULT - Dropped Local Send TID: 1 Event: 5 Data: 0 Size: 0
+[1431948172.119512] 2:4; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948172.119592] 2:2; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948172.119857] 2:6; xsal_send.c:98; FAULT - Dropped Local Send TID: 5 Event: 5 Data: 0 Size: 0
+[1431948172.119868] 2:8; xsal_send.c:98; FAULT - Dropped Local Send TID: 7 Event: 5 Data: 0 Size: 0
+[1431948172.120159] 2:8; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948172.120210] 2:6; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948172.112241] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948172.112344] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948172.118893] 2:2; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1431948172.118915] 2:4; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1431948172.119010] 2:6; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1431948172.118998] 2:3; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1431948172.119024] 2:4; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1431948172.119029] 2:1; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1431948172.119049] 2:2; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1431948172.119055] 2:1; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1431948172.119059] 2:3; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1431948172.119063] 2:5; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1431948172.119202] 2:6; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1431948172.119217] 2:5; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1431948172.119314] 2:7; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1431948172.119332] 2:8; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1431948172.119339] 2:8; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1431948172.119347] 2:7; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1431948172.119388] 2:4; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1431948172.119395] 2:3; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1431948172.119404] 2:6; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1431948172.119417] 2:4; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1431948172.119423] 2:3; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1431948172.119434] 2:2; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1431948172.119439] 2:1; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1431948172.119444] 2:2; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1431948172.119448] 2:1; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1431948172.119471] 2:4; test_send.c:697; INFO_HI - Send_Test_5 0
+[1431948172.119477] 2:3; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1431948172.119501] 2:2; test_send.c:697; INFO_HI - Send_Test_5 0
+[1431948172.119507] 2:1; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1431948172.119521] 2:4; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1431948172.119573] 2:3; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1431948172.119604] 2:2; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1431948172.119622] 2:1; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1431948172.119638] 2:5; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1431948172.119715] 2:8; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1431948172.119730] 2:7; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1431948172.119764] 2:6; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1431948172.119794] 2:5; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1431948172.119816] 2:8; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1431948172.119832] 2:7; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1431948172.120071] 2:8; test_send.c:697; INFO_HI - Send_Test_5 0
+[1431948172.120100] 2:7; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1431948172.120125] 2:6; test_send.c:697; INFO_HI - Send_Test_5 0
+[1431948172.120137] 2:5; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1431948172.120184] 2:8; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1431948172.120198] 2:7; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1431948172.120227] 2:6; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1431948172.120302] 2:5; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1431948172.123780] 2:0; test_send.c:1522; INFO_HI - Test PASSED
+[1431948172.125935] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 0 Size: 0
+[1431948172.126019] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 0
+[1431948172.128482] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 3 Data: 0 Size: 0
+[1431948172.128510] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 1
+[1431948172.130947] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[1431948172.131014] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 2
+[1431948172.133466] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[1431948172.133485] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 3
+[1431948172.125099] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948172.125155] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948172.133790] 2:0; test_send_callback.c:1456; INFO_HI - Test PASSED
+[1431948172.135418] 2:0; test_thread.c:1718; FAULT - Round Robin Interval 0.016000000 secs
+[1431948176.981332] 2:14; xsal_send.c:98; FAULT - Dropped Local Send TID: 13 Event: 1 Data: 0 Size: 0
+[1431948178.498877] 2:14; xsal_send.c:98; FAULT - Dropped Local Send TID: 13 Event: 1 Data: 0 Size: 0
+[1431948172.135240] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948172.135309] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948179.113594] 2:0; test_thread.c:1785; INFO_HI - Test PASSED
+[1431948179.645924] 2:0; xsal_send.c:98; FAULT - Dropped Local Send TID: 5 Event: 40 Data: 0 Size: 0
+[1431948204.580151] 2:5; test_timer.c:1719; FAULT - Periodic_Ex_Test/ wrong ticks number: 1/10, 1/5
+[1431948179.114996] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948179.115054] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948204.580628] 2:0; test_timer.c:1811; INFO_HI - Test PASSED
+[1431948204.582028] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948204.582140] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948204.583021] 2:9; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.583366] 2:10; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.585420] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.587950] 2:12; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.590350] 2:13; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.592684] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[1431948204.594918] 2:0; test_unknown_thread.c:421; INFO_HI - Test PASSED
+[1431948204.596230] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948204.596287] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948204.598063] 2:1; test_cond.c:82; INFO_HI - WAIT_THREAD is waiting...
+[1431948204.598091] 2:1; test_cond.c:87; INFO_HI - Number = 5
+[1431948204.799993] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.800046] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.800095] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.800133] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.800601] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.800681] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.801176] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.801261] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.801308] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.801366] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.801833] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.801931] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.802464] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.802542] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.804307] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.804365] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.805112] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.805170] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.805578] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1431948204.805675] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1431948204.806674] 2:0; test_cond.c:304; INFO_HI - Test PASSED
+[1431948204.809602] 2:5; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1431948204.814640] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 8 Size: 17
+[1431948204.814662] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 8 Size: 17
+[1431948204.814666] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 4 Event: 8 Size: 17
+[1431948204.814670] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 5 Event: 8 Size: 17
+[1431948204.808083] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948204.808142] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948204.809710] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test1_1[LRec2]: Start
+[1431948204.809783] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test1_2[LRec3]: Start
+[1431948204.809881] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test1_1[LRec4]: Start
+[1431948204.809959] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test1_2[LRec5]: Start
+[1431948204.810336] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.810352] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test1_2[LRec3]: Stop, ret = 0
+[1431948204.810354] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test2_2[LRec3]: Start
+[1431948204.810464] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test1_1[LRec4]: Stop, ret = 0
+[1431948204.810469] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test2_1[LRec4]: Start
+[1431948204.811319] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test1_1[LRec2]: Stop, ret = 0
+[1431948204.811324] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test2_1[LRec2]: Start
+[1431948204.811345] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test1_2[LRec5]: Stop, ret = 0
+[1431948204.811348] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test2_2[LRec5]: Start
+[1431948204.811752] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.811774] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test2_1[LRec2]: Stop, ret = 0
+[1431948204.811778] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test3_1[LRec2]: Start
+[1431948204.811882] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test2_1[LRec4]: Stop, ret = 0
+[1431948204.811886] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test3_1[LRec4]: Start
+[1431948204.811963] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test2_2[LRec3]: Stop, ret = 0
+[1431948204.811968] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test3_2[LRec3]: Start
+[1431948204.812033] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test2_2[LRec5]: Stop, ret = 0
+[1431948204.812037] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test3_2[LRec5]: Start
+[1431948204.812702] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.812806] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test3_1[LRec2]: Stop, ret = 0
+[1431948204.812810] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test4_1[LRec2]: Start
+[1431948204.812927] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test3_1[LRec4]: Stop, ret = 0
+[1431948204.812931] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test4_1[LRec4]: Start
+[1431948204.813023] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test3_2[LRec5]: Stop, ret = 0
+[1431948204.813027] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test4_2[LRec5]: Start
+[1431948204.813047] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test3_2[LRec3]: Stop, ret = 0
+[1431948204.813050] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test4_2[LRec3]: Start
+[1431948204.814368] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.814396] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test4_2[LRec5]: Stop, ret = 0
+[1431948204.814400] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test5_2[LRec5]: Start
+[1431948204.814460] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test4_1[LRec2]: Stop, ret = 0
+[1431948204.814464] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test5_1[LRec2]: Start
+[1431948204.814515] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test4_1[LRec4]: Stop, ret = 0
+[1431948204.814518] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test5_1[LRec4]: Start
+[1431948204.814570] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test4_2[LRec3]: Stop, ret = 0
+[1431948204.814574] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test5_2[LRec3]: Start
+[1431948204.814776] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.814804] 2:5; test_local_publish.c:662; INFO_HI - Receive_Tes[1431948204.815202] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948204.815215] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948204.815220] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1431948204.815224] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+t5_2[LRec5]: Stop, ret = 0
+[1431948204.814832] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test6_2[LRec5]: Start
+[1431948204.814925] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test5_2[LRec3]: Stop, ret = 0
+[1431948204.814929] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test6_2[LRec3]: Start
+[1431948204.814991] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test5_1[LRec4]: Stop, ret = 0
+[1431948204.814995] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test6_1[LRec4]: Start
+[1431948204.815040] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test5_1[LRec2]: Stop, ret = 0
+[1431948204.815043] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test6_1[LRec2]: Start
+[1431948204.815270] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1431948204.815298] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test6_2[LRec3]: Stop, ret = 0
+[1431948204.815373] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test6_2[LRec5]: Stop, ret = 0
+[1431948204.815399] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test6_1[LRec2]: Stop, ret = 0
+[1431948204.815450] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test6_1[LRec4]: Stop, ret = 0
+[1431948204.815952] 2:0; test_local_publish.c:1500; INFO_HI - Test PASSED
+[1431948204.820242] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 0
+[1431948204.820267] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 0
+[1431948204.820275] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 0
+[1431948204.820279] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 0
+[1431948204.822647] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 3 Size: 0
+[1431948204.822670] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 1
+[1431948204.825148] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1431948204.825169] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 2
+[1431948204.825174] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1431948204.825187] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 2
+[1431948204.827580] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1431948204.827601] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 3
+[1431948204.827606] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1431948204.827610] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 3
+[1431948204.817150] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948204.817206] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948204.828119] 2:0; test_local_publish_callback.c:679; INFO_HI - Test PASSED
+[1431948204.829227] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948204.829285] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948207.050166] 2:2; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 502
+[1431948207.551278] 2:3; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 501
+[1431948208.053696] 2:2; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 503
+[1431948208.056709] 2:0; test_receive_from.c:1050; INFO_HI - Test PASSED
+[1431948208.058166] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948208.058232] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948208.061632] 2:1; test_rpc.c:151; INFO_HI - Server_Test_Pulse START
+[1431948208.061649] 2:2; test_rpc.c:178; INFO_HI - Client_Test_Pulse START
+[1431948208.064404] 2:2; test_rpc.c:186; INFO_HI - Client_Test_Pulse STOP
+[1431948208.064457] 2:1; test_rpc.c:164; INFO_HI - Server_Test_Pulse STOP
+[1431948208.065042] 2:1; test_rpc.c:211; INFO_HI - Server_Test_Send START
+[1431948208.065050] 2:2; test_rpc.c:235; INFO_HI - Client_Test_Send START
+[1431948208.070239] 2:1; test_rpc.c:224; INFO_HI - Server_Test_Send STOP
+[1431948208.070294] 2:2; test_rpc.c:246; INFO_HI - Client_Test_Send STOP
+[1431948208.071362] 2:1; test_rpc.c:273; INFO_HI - Server_Test_Send_VS START
+[1431948208.071370] 2:2; test_rpc.c:297; INFO_HI - Client_Test_Send_VS START
+[1431948208.076726] 2:1; test_rpc.c:286; INFO_HI - Server_Test_Send_VS STOP
+[1431948208.076784] 2:2; test_rpc.c:319; INFO_HI - Client_Test_Send_VS STOP
+[1431948208.077359] 2:1; test_rpc.c:345; INFO_HI - Server_Test_Send_SV START
+[1431948208.077369] 2:2; test_rpc.c:380; INFO_HI - Client_Test_Send_SV START
+[1431948208.082685] 2:1; test_rpc.c:366; INFO_HI - Server_Test_Send_SV STOP
+[1431948208.082797] 2:2; test_rpc.c:403; INFO_HI - Client_Test_Send_SV STOP
+[1431948208.083067] 2:0; test_rpc.c:813; INFO_HI - Test PASSED
+[1431948208.084509] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948208.084571] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948214.996003] 2:0; test_rwlock.c:2094; INFO_HI - Test PASSED
+[1431948214.997251] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948214.997317] 3:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_SERVICE (No such file or directory). Using default dbg_trace levels.
+[1431948214.997422] 3:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1431948216.002965] 3:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1431948216.001307] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948216.001373] 2:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_SYSTEM (No such file or directory). Using default dbg_trace levels.
+[1431948216.001482] 2:0; test_shared_memory.c:259; INFO_HI - CreateMemProcess
+[1431948216.003371] 2:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1431948214.997394] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948214.997452] 4:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_CLIENT (No such file or directory). Using default dbg_trace levels.
+[1431948214.997599] 4:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1431948216.003407] 4:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1431948214.998185] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-05-18
+[1431948214.998242] 5:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_CLIENT2 (No such file or directory). Using default dbg_trace levels.
+[1431948214.998327] 5:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1431948216.003422] 5:0; test_shared_memory.c:400; INFO_HI - Test PASSED

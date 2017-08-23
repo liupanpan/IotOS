@@ -1,0 +1,88 @@
+#ifndef XSAL_APPLICATION_ID_H
+#   define XSAL_APPLICATION_ID_H
+/*===========================================================================*/
+/**
+ * @file xsal_application_id.h
+ *
+ * This file defines the system wide application ids. Its contents are
+ * unique to a given system.
+ *
+ * %full_filespec:xsal_application_id.h.txt~kok_basa#8:Text:kok_aud#1 %
+ * @version %version:kok_basa#8 %
+ * @author  %derived_by:dzq92s %
+ * @date    %date_modified:Mon Jan 10 09:29:56 2011 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2010 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * @ingroup xsal_data_types_grp
+ * @{
+ */
+/*==========================================================================*/
+
+#error "Configure this file for your system"
+
+/**
+ * Uses X MACROs to define the enumeration tags and names for the system's
+ * application ids.
+ */
+#   define SAL_APPLICATION_IDS\
+    X(APP_PROCMAN,       "procman"      ) /*  1 */\
+    X(APP_DESIP,         "desip"        ) /*  2 */
+
+#   undef X
+#   define X(a,b) a, /* Create list of enumeration tags */
+/**
+ * Each application (process) that needs to use XSAL messaging must have
+ * a unique "application id". This "app id" is part of the "addressing
+ * mechanism" for sending messages between applications. The list of
+ * app ids is unique to a system. This enumeration assigns values to the
+ * application ids.
+ *
+ * @note Application IDs must be greater than 0.
+ */
+typedef enum
+{
+   SAL_NO_APP_ID = 0,
+
+   SAL_APPLICATION_IDS
+
+   SAL_LAST_APP_ID
+}
+SAL_Application_Id_T;
+
+#   undef X
+
+/**
+ * Application ID associated with first application.
+ */
+#   define SAL_FIRST_APP_ID 1
+
+/**
+ * Used by XSAL to size arrays based on number of applications.
+ */
+#   define SAL_MAX_APPS (SAL_LAST_APP_ID-SAL_FIRST_APP_ID)
+
+/*===========================================================================*/
+/*!
+ * @file xsal_application_id.h
+ *
+ * @section RH REVISION HISTORY (top to bottom: last revision to first revision)
+ *
+ * - 21-apr-2010 Kirk Bailey
+ *   - Removed extern C block.
+ *
+ * - 22-jul-2008 Kirk Bailey
+ *   - Changed tags to follow naming convention by using SAL_ prefix.
+ *
+ * - 04-mar-2008 Kirk Bailey
+ *   - Removed DB48x-specific defintions.
+ *   - Implemented X MACRO technique for assigning application ids and names.
+ *
+ *===========================================================================*/
+/** @} doxygen end group */
+#endif /* XSAL_APPLICATION_ID_H */

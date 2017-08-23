@@ -1,0 +1,1 @@
+../../../support/bbc_trace/bb_printf_gate/bb_printf_gate_api/printf_gate.h

@@ -1,0 +1,104 @@
+#=============================================================================
+#
+# %full_filespec: valgrind_custom.supp~3:ascii:kok_inf#2 %
+# %version: 3 %
+# %derived_by: dzq92s %
+# %date_modified: Sun Aug 31 11:56:17 2014 %
+#
+#=============================================================================
+#
+# This file contains custom Valgrind suppressions unique to this project.
+#
+#=============================================================================
+
+
+#-----------------------------------------------------------------------------
+# SAL_Create_Timer() allocates a block of memory that can be used for future
+# timers and is managed by the timer code.  This memory is not freed.
+#-----------------------------------------------------------------------------
+
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Period_Start_Timer
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Period_Stop_Timer
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Single_Start_Timer_1
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Single_Start_Timer_2
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Tick_Timer_1
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Tick_Timer_2
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Tick_Timer_3
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Change_Tick_Timer_1
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Change_Tick_Timer_2
+}
+{
+   Create Timer Cleanup
+   Memcheck:Leak
+   fun:malloc
+   fun:SAL_Create_Timer
+   fun:Single_Shot_Ex_Test
+}
+
+#=============================================================================
+# Revisions:
+#-----------------------------------------------------------------------------
+# - 25Sep13  David Origer  Rev. 1
+#    - Suppressions for SAL_Create_Timer() created.
+#
+# - 2-Dec-13  Joel Kiger  Rev. 2
+#    - Suppressions for SAL_Create_Timer() update.
+#
+# - 31-Aug-14 Kirk Bailey Rev. 3
+#    - Suppressions for SAL_Create_Timer() update.
+#
+#=============================================================================
+

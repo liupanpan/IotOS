@@ -1,0 +1,245 @@
+#===========================================================================
+# FILE: Makefile_template
+#===========================================================================
+# Copyright 2008 Delphi Technologies, Inc., All Rights Reserved.
+# Delphi Confidential
+#---------------------------------------------------------------------------
+# %full_filespec: Makefile_template~kok_inf#7:makefile:kok_aud#5 %
+# %version: kok_inf#7 %
+# %derived_by: wzj1t9 %
+# %date_modified: Mon Apr 21 07:24:19 2014 %
+#---------------------------------------------------------------------------
+#
+# DESCRIPTION:
+# ------------
+# This file provides the project-specific information required for a build
+# of this module. On entry, the variable "_build_" identifies which build is
+# being performed, and the variable $(_build_)_FLAVOR defines the flavor for
+# this build. This file includes other files (prolog.mak and epilog.mak)
+# that are unique for the flavor from the $(MAKE_INCL_DIR) directory.
+#
+#===========================================================================
+_flavor_ := $($(_build_)_FLAVOR)
+
+#
+# If the build of this module is only appropriate for a certain flavor, or
+# flavors, then uncomment and modify this "ifneq" (AND THE CORRESPONDING "endif"
+# AT THE END OF THE FILE!).
+#
+#######################################
+# Only build for QNX!
+###ifneq ($(filter qnx_%,$(_flavor_)),)
+#######################################
+
+##########################################################################
+# Set up the initial values for variables used to create the build rules.
+include $(MAKE_INCL_DIR)/$(_flavor_)_prolog.mak
+
+###############################################################################
+# Definitions for compiling/assembling source code into object code:
+####################################################################
+
+#
+# Each directory in the space-separated list assigned to _src_dirs_ is treated
+# as having source files associated with the module. Default behavior is to
+# search these directories for all source files and create rules to generate
+# the associated object files. In addition, each of these directories is
+# explicitly added to the search path used by the compiler to locate header
+# files when building the source files for this module. The directories listed
+# must be relative to the root project's directory. If the directory does not
+# exist, or contains no source files, then no warning will be issued.
+#
+# EXAMPLE: _src_dirs_ := $(_cur_module_path_)/<implementation directory>/_src
+#
+_src_dirs_ :=
+#
+# The default behavior is for each directory listed in _src_dirs_ to be
+# searched for source files (asm, C, C++) and to create a rule to build the
+# associated object file. If that is not the desired behavior, then it can be
+# overridden by assigning the associated "_find_xxx" variable a value of zero
+# before including epilog.mak. This can be done by simply removing the comments
+# below. Note that there is separate control for each of the source file types
+# (asm, C, C++). If you disable the default behavior for a source file type,
+# then you must manually create a space-separated list of source files for that
+# type in the "_xxx_srcs_" variable prior to including epilog.mak. The following
+# comments list these variables with examples of how to use the current module
+# path to specify a file.
+#
+###_find_asm_srcs_ := 0
+###_find_c_srcs_ := 0
+###_find_cpp_srcs_ := 0
+###_asm_srcs_ := $(_cur_module_path_)/<module-relative path to asm source file>
+###_c_srcs_ := $(_cur_module_path_)/<module-relative path to C source file>
+###_cpp_srcs_ := $(_cur_module_path_)/<module-relative path to C++ source file>
+
+###############################################################################
+# Definitions for linking object code into a static library:
+############################################################
+
+#
+# If this module is to build a library, it signals its intent to do so by
+# assigning a value to "_lib_name_". The name does not include any prefix or
+# suffix associated with libraries generated for the build's flavor; e.g.,
+# _lib_name_ would be assigned "foo" (without the quotes) to generate
+# libfoo.a for most targets. After epilog.mak is included, the variable
+# "_lib_file_" will have the full path and name of the library file to
+# be generated; e.g., $($(_build_)_LIB_OUTDIR)/$(_lib_prefix_)foo$(_lib_ext_)
+#
+# EXAMPLE: _lib_name_ := test_platform 
+#         in order to generate $(_lib_prefix_)test_platform$(_lib_ext_)
+#
+_lib_name_ :=
+#
+# The space-separated list of object files that go into the library must be
+# manually assigned to _lib_objs_. Each entry in the list must contain the full
+# path to the object file. As the following example shows, the values of a
+# variable can be used to specify the path to the standard object file area for
+# the build.
+#
+# EXAMPLE: _lib_objs_ := $($(_build_)_OBJ_OUTDIR)/filename$(_obj_ext_)
+#
+_lib_objs_ :=
+
+#
+# Define the list of libraries to link against when linking as a shared object.
+# If you want the library to be defined as a prerequisite of the shared object 
+# (so that the shared object is rebuilt any time the library is new), then you 
+# must specify the path to the library; e.g., "<rel_proj_dir>/libfoo.a". Libraries 
+# specified without a path (e.g., "libfoo.a") will not be made prerequisites of 
+# the shared object and will be found by dynamically searching the library directories
+# (LIB_DIRS) in whatever manner is prescribed for the tools associated with this flavor.
+#
+# EXAMPLE:  _lib_libs_ := $($(_build_)_LIB_OUTDIR)/$(_lib_prefix_)$($(_build_)_lib_name_lib)
+#
+
+#
+# Check if project wide library configuration is
+# set if not set to default 
+#
+#ifeq (,$($(_build_)_lib_name_lib))
+#	$(_build_)_lib_name_lib := lib_name$(_lib_ext_) 
+#endif
+_lib_libs_  := 
+
+###############################################################################
+# Definitions for generating an executable from object files and libraries:
+###########################################################################
+
+#
+# If this module is to build an excutable ("binary"), it signals its intent to
+# do so by assigning a value to "_bin_name_". If a standard suffix for
+# executables is desired (e.g., ".exe"), then the value assigned to _bin_name_
+# can include it; if it doesn't, it will be appended. After epilog.mak is
+# included, the variable "_bin_file_" will have the full path and name of the
+# executable fileto be generated; e.g.,
+# $($(_build_)_BIN_OUTDIR)/my_prog$(_bin_ext_)
+#
+# EXAMPLE: _bin_name_ := my_prog
+#
+_bin_name_ :=
+#
+# The space-separated list of object files that go into the binary must be
+# manually assigned to _bin_objs_. Each entry in the list must contain the full
+# path to the object file. As the following example shows, the values of a 
+# variable can be used to specify the path to the standard object file area for
+# the build.
+#
+# EXAMPLE: _bin_objs_ := $($(_build_)_OBJ_OUTDIR)/my_prog$(_obj_ext_)
+#
+_bin_objs_ :=
+#
+# The space-separated list of libraries to link against must be assigned to
+# _bin_libs_. Libraries specified with complete paths (which applies to
+# any libraries built within this project) will be noted as dependencies of
+# the binary. This means that the binary will be rebuilt any time the library is
+# updated. Libraries specified without a path will not be dependencies of
+# the binary and will be found by dynamically searching the library directories
+# associated with the tool set (or those defined by _bin_lib_dirs_, below).
+#
+# EXAMPLE:
+# _bin_libs_ := $($(_build_)_LIB_OUTDIR)/$(_lib_prefix_)$($(_build_)_lib_name_lib)
+#
+_bin_libs_ :=
+#
+# Any paths that must be searched for libraries that are not within the project
+# or the tools automatic search paths must be placed in the space-separated
+# value assinged to _bin_lib_dirs_. Use of this capability is rare and 
+# discouraged because it requires developers to have common installation paths
+# in order for the build to be portable.
+#
+# EXAMPLE: _bin_lib_dirs_ := <path to library>
+#
+_bin_lib_dirs_ := 
+#
+# If appropriate, define the linker command file for the binary.
+#
+# EXAMPLE: _bin_lnk_cmd_ := $(_cur_module_path_)/$(_flavor_).lnk
+#
+_bin_lnk_cmd_ :=
+
+###############################################################################
+# Use the values established above to generate the build rules for this module.
+include $(MAKE_INCL_DIR)/$(_flavor_)_epilog.mak
+
+##############################################################################
+# Any customizations to tool options (compiler, linker settings, etc.) can
+# be made here. These changes follow the include of epilog.mak in order to
+# take advantage of some of the variables whose values it establishes; e.g.,
+# _cur_module_objs_, _lib_file_, _bin_file_.
+##############################################################################
+
+# The following shows how to modify the compiler optimization setting for a
+# single file generated. Note that the file specified is the object file (the
+# "target" of the compilation). The syntax of the compiler option is tool-
+# specific; the example given is for gcc-like compilers.
+###$($(_build_)_OBJ_OUTDIR)/some_file$(_obj_ext_):CC_$(_build_)_OPT:=-O0
+
+# The following shows how to modify the compiler options to add a MACRO
+# definition for all object files generated from source files in this module.
+# The net result is that when those object files are compiled, the symbol
+# SOME_DEFINITION will have the value 1. Note that the syntax of the compiler
+# option is tool-specific; the example given is for gcc-like compilers.
+###$(_cur_module_objs_):CC_$(_build_)_MACRO+=-DSOME_DEFINITION=1
+
+
+#
+# If the #ifeq at the beginning of the file was used to only build this module
+# for certain flavors, then uncomment the "endif".
+#
+#####
+###endif # ifneq ($(filter qnx_%,$(_flavor_)),)
+#####
+
+#===========================================================================
+# File Revision History (top to bottom: first revision to last revision)
+#===========================================================================
+#
+# Date        Name      (Description on following lines: SCR #, etc.)
+# ----------- --------
+# 03-aug-2006 kirk bailey
+# + Created initial file.
+#
+# 25-aug-2006 kirk bailey
+# + Corrected full_filespec, version, author, date fields.
+#
+# 03-sep-2006 kirk bailey
+# + Switched from "flavors" to "builds".
+#
+# 16-jan-2007 kirk bailey
+# + Corrected example comments.
+#
+# 22-mar-2007 kirk bailey
+# + Got rid of _incl_list_. Added example for conditional build based on
+# + flavor.
+#
+# 06-dec-2007 kirk bailey
+# + Changed "userid" to "Name" in revision history.
+#
+# 24-jul-2008 kirk bailey
+# + Improved comments and added support for explictly specifying the
+# + source files for a module.
+#
+# 21-Apr-2014 Joel Kiger
+# + Added shared object examples to template
+#
+#===========================================================================

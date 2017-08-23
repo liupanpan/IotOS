@@ -1,0 +1,654 @@
+#ifndef XSAL_EVENT_ID_H
+#   define XSAL_EVENT_ID_H
+/*===========================================================================*/
+/**
+ * @file xsal_event_id.h
+ *
+ * System wide events IDs.
+ *
+ * %full_filespec:xsal_event_id.h.txt~kok_basa#8:Text:kok_aud#2 %
+ * @version %version:kok_basa#8 %
+ * @author  %derived_by:dzq92s %
+ * @date    %date_modified:Fri Dec 18 13:15:29 2015 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2015 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * @section DESC DESCRIPTION:
+ *   All system event IDs. This file defines all event IDs for the XSAL MDF.
+ *
+ * @section ABBR ABBREVIATIONS:
+ *   - XSAL = eXtensible System Abstraction Layer.
+ *
+ * @section TINFO TRACEABILITY INFO:
+ *   - Design Document(s):
+ *
+ *   - Requirements Document(s):
+ *     BASA_SRS_Error_Management_0 4.doc
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - <a href="http://kogespw1.delcoelect.com:8508/passthru/consumer?name=SW%20REF%20264.15D&doctype=K8DBSDoc">
+ *       SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]</a>
+ *
+ * @section DFS DEVIATIONS FROM STANDARDS:
+ *   - None
+ *
+ * @defgroup xsal_events_grp Public event IDs
+ * @{
+ */
+/*==========================================================================*/
+
+#error "Configure this file for your system"
+
+/*===========================================================================*\
+ * Header Files
+\*===========================================================================*/
+#  include "DIReCt_event_id.h"
+#  include "abtupdate_event_id.h"
+#  include "afp_event_id.h"
+#  include "amfm_mgr_na_event_id.h"
+#  include "androidauto_event_id.h"
+#  include "apm_event_id.h"
+#  include "app_test_interface_event_id.h"
+#  include "asr_manager_event_id.h"
+#  include "audio_facade_event_id.h"
+#  include "audio_mgr_facade_event_id.h"
+#  include "audio_mute_mgr_event_id.h"
+#  include "bt_as_event_id.h"
+#  include "bt_as_private_event_id.h"
+#  include "bt_cm_event_id.h"
+#  include "bt_cm_private_event_id.h"
+#  include "bt_cm_spp_private_event_id.h"
+#  include "bt_diag_event_id.h"
+#  include "bt_diag_event_id.h"
+#  include "bt_diag_private_event_id.h"
+#  include "bt_diag_private_event_id.h"
+#  include "bt_hfp_event_id.h"
+#  include "bt_hfp_private_event_id.h"
+#  include "bt_map_event_id.h"
+#  include "bt_map_private_event_id.h"
+#  include "bt_pbap_event_id.h"
+#  include "bt_pbap_private_event_id.h"
+#  include "bt_spp_event_id.h"
+#  include "bt_spp_handler_event_id.h"
+#  include "bt_spp_private_event_id.h"
+#  include "bt_storage_manager_event_id.h"
+#  include "btstrm_connection_event_id.h"
+#  include "bluetooth_vp1_power_moding_event_id.h"
+#  include "btupdate_event_id.h"
+#  include "camera_event_id.h"
+#  include "chimes_task_event_id.h"
+#  include "carplay_event_id.h"
+#  include "conn_mgr_event_id.h"
+#  include "diag_interface_manager_event_id.h"
+#  include "external_interfaces_event_id.h"
+#  include "file_system_event_id.h"
+#  include "iap_notifications_event_id.h"
+#  include "gpsupdate_event_id.h"
+#  include "hf_audio_processing_event_id.h"
+#  include "hkpupdate_event_id.h"
+#  include "ic_interface_ap_vp2_event_id.h"
+#  include "inicupdate_event_id.h"
+#  include "installation_manager_event_id.h"
+#  include "installation_manager_light_event_id.h"
+#  include "ipod_bgnd_event_id.h"
+#  include "ipod_control_event_id.h"
+#  include "ipod_database_sync_event_id.h"
+#  include "ipod_player_event_id.h"
+#  include "metadata_handler_event_id.h"
+#  include "mostupdate_event_id.h"
+#  include "nav_core_event_id.h"
+#  include "phone_call_mgr_event_id.h"
+#  include "phonebook_db_event_id.h"
+#  include "pits_event_id.h"
+#  include "proxi_manager_event_id.h"
+#  include "pm_event_id.h"
+#  include "prompt_manager_event_id.h"
+#  include "ps_event_id.h"
+#  include "reuse.h"
+#  include "soh_event_id.h"
+#  include "source_manager_event_id.h"
+#  include "sxm_advanced_audio_event_id.h"
+#  include "sxm_sxe_drv_control_event_id.h"
+#  include "sxm_sxi_fwu_mgr_event_id.h"
+#  include "sxm_sxi_lists_mgr_event_id.h"
+#  include "sxm_sxi_playback_mgr_event_id.h"
+#  include "sxm_sxi_power_event_id.h"
+#  include "sxm_sxi_tune_event_id.h"
+#  include "sxm_sxi_utils_mgr_event_id.h"
+#  include "sxmupdate_event_id.h"
+#  include "sys_sounds_event_id.h"
+#  include "thread_hdlr_event_id.h"
+#  include "tone_event_id.h"
+#  include "touch_manager_event_id.h"
+#  include "tuner_event_id.h"
+#  include "tuner_preset_mgr_event_id.h"
+#  include "usb_connection_event_id.h"
+#  include "usb_detection_event_id.h"
+#  include "vp2_power_mode_event_id.h"
+#  include "vpd_control_interface_event_id.h"
+#  include "vr_data_handler_event_id.h"
+#  include "vui_adaptor_event_id.h"
+#  include "vui_manager_event_id.h"
+#  include "xsal_msg_thread_event_id.h"
+#  include "xsalcpp_event_id.h"
+#  include "tuner_mgr_md_dec_enc_event_id.h"
+#  include "amfm_mngr_event_id.h"
+#  include "ed_term_event_id.h"
+#  include "vui_diag_srdl_event_id.h"
+#  include "vui_diag_dats_event_id.h"
+#  include "gps_event_id.h"
+#  include "im_satellite_launcher_event_id.h"
+#  include "vp2_system_animation_event_id.h"
+#  include "vp2_apps_manager_event_id.h"
+
+
+/*===========================================================================*\
+ * Exported Type Declarations
+\*===========================================================================*/
+/**
+ *  This file is configured to allocate ranges of event IDs by Component in attempt
+ *  to minimize the changing of ID values. Generally, Adding or deleting a message to a
+ *  component does not change the value of IDs for other components or the total number
+ *  of messages
+ *
+ *  Each Range starts with SAL_START_RANGE and unique range name (e.g., AUDIO_PRIVATE)
+ *  The range ends with SAL_END_RANGE with same name as SAL_START_RANGE and the size of the range.
+ *  Care must be taken to ensure the range size is actually greater than the number of events
+ *  defined in the range.  Use gen_xsal_message to see list of all messages with IDs.
+ *
+ * Ranges do not need to be used for mdfs only for projects which want to maintain constant event values.
+ */
+
+/**
+ * System events that are private to the modules that define them, which means
+ * they are intended only for local use by that module. These events are
+ * "exposed" only to assign them unique values within the SAL_Event_Id_T enum.
+ */
+#   define  SAL_PRIVATE_EVENTS \
+   SAL_START_RANGE(APPS_PRIVATE) \
+   SAL_END_RANGE(APPS_PRIVATE, 25) \
+   \
+   SAL_START_RANGE(AUDIO_PRIVATE) \
+      AUDIO_PRIVATE_EVENTS \
+      AUMGR_PRIVATE_EVENTS \
+      AUMUTEMGR_PRIVATE_EVENTS \
+      CHIMES_TASK_PRIVATE_EVENTS \
+      SSM_PRIVATE_EVENTS \
+      TONE_PRIVATE_EVENTS \
+      SSND_PRIVATE_EVENTS \
+   SAL_END_RANGE(AUDIO_PRIVATE, 400) \
+   \
+   SAL_START_RANGE(DIAG_PRIVATE) \
+     DIAG_INTERFACE_PRIVATE_EVENTS\
+     PITS_PRIVATE_EVENTS\
+   SAL_END_RANGE(DIAG_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(MEDIA_PRIVATE) \
+      AFP_PRIVATE_EVENTS\
+      BTSTRM_CONNECTION_PRIVATE_EVENTS \
+      FILESYSTEM_PRIVATE_EVENTS \
+      IAP_NOTIFICATIONS_PRIVATE_EVENTS \
+      IPLAYER_PRIVATE_EVENTS \
+      IPOD_BGND_PRIVATE_EVENTS \
+      IPOD_CONTROL_PRIVATE_EVENTS \
+      IPOD_DATABASE_SYNC_PRIVATE_EVENTS \
+      METADATA_HANDLER_PRIVATE_EVENTS \
+      USB_CONNECTION_PRIVATE_EVENTS \
+      USB_DETECTION_PRIVATE_EVENTS \
+      VPD_CONTROL_PRIVATE_EVENTS \
+   SAL_END_RANGE(MEDIA_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(MIRRORING_PRIVATE) \
+      ANDROIDAUTO_PRIVATE_EVENTS \
+      CARPLAY_PRIVATE_EVENTS \
+      CONN_MGR_PRIVATE_EVENTS \
+   SAL_END_RANGE(MIRRORING_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(NAV_PRIVATE) \
+      NAV_CORE_PRIVATE_EVENTS\
+      GPS_PRIVATE_EVENTS \
+   SAL_END_RANGE(NAV_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(PHONE_PRIVATE) \
+      BT_CM_PRIVATE_EVENTS \
+      BT_CM_SPP_PRIVATE_EVENTS\
+      BT_SPP_PRIVATE_EVENTS \
+      BT_DIAG_PRIVATE_EVENTS \
+      BT_HFP_PRIVATE_EVENTS \
+      BT_MAP_PRIVATE_EVENTS \
+      BT_PBAP_PRIVATE_EVENTS \
+      BT_AS_PRIVATE_EVENTS \
+      PHONE_MGR_PRIVATE_EVENTS \
+      HFAP_PRIVATE_EVENTS \
+      BLUETOOTH_PM_PRIVATE_EVENTS \
+      BT_STORAGE_MANAGER_PRIVATE_EVENTS\
+      PBDB_PRIVATE_EVENTS\
+   SAL_END_RANGE(PHONE_PRIVATE, 350) \
+   \
+   SAL_START_RANGE(PLATFORM_PRIVATE) \
+      APM_PRIVATE_EVENTS \
+      PM_PRIVATE_EVENTS \
+      PS_PRIVATE_EVENTS \
+      SOH_PRIVATE_EVENTS \
+      THREAD_HDLR_PRIVATE_EVENTS\
+      XSALMT_PRIVATE_EVENTS \
+      ANIMATION_PRIVATE_EVENTS \
+   SAL_END_RANGE(PLATFORM_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(SYSTEM_PRIVATE) \
+      CAMERA_PRIVATE_EVENTS \
+      POWER_MODE_PRIVATE_EVENTS\
+      PROXI_PRIVATE_EVENTS\
+      TOUCH_MANAGER_PRIVATE_EVENTS \
+   SAL_END_RANGE(SYSTEM_PRIVATE, 100) \
+   \
+   SAL_START_RANGE(TUNER_PRIVATE) \
+      AMFM_NA_MNGR_PRIVATE_EVENTS \
+      AMFM_PRIVATE_EVENTS\
+      ED_TERM_PRIVATE_EVENTS\
+      TUNER_PRIVATE_EVENTS \
+      TUNER_MGR_MD_PRIVATE_EVENTS\
+      TUNER_PRESET_MGR_PRIVATE_EVENTS \
+      APP_TEST_INTERFACE_PRIVATE_EVENTS\
+   SAL_END_RANGE(TUNER_PRIVATE, 300) \
+   \
+   SAL_START_RANGE(VEHICLE_PRIVATE) \
+      IC_HANDLER_PRIVATE_EVENTS \
+      EI_PRIVATE_EVENTS \
+   SAL_END_RANGE(VEHICLE_PRIVATE, 500) \
+   \
+   SAL_START_RANGE(VOICE_PRIVATE) \
+      ASR_MGR_PRIVATE_EVENTS \
+      PROMPT_MGR_PRIVATE_EVENTS \
+      VRDH_PRIVATE_EVENTS            \
+      VUI_ADAPTOR_PRIVATE_EVENTS \
+      VUI_MANAGER_PRIVATE_EVENTS \
+      VUI_DIAG_SRDL_PRIVATE_EVENTS \
+      VUI_DIAG_DATS_PRIVATE_EVENTS \
+   SAL_END_RANGE(VOICE_PRIVATE, 250) \
+   \
+   SAL_START_RANGE(REPROGRAMMING_PRIVATE) \
+	  HKPUPDATE_PRIVATE_EVENTS \
+	  ABTUPDATE_PRIVATE_EVENTS \
+	  BTUPDATE_PRIVATE_EVENTS \
+	  INICUPDATE_PRIVATE_EVENTS \
+	  GPSUPDATE_PRIVATE_EVENTS \
+	  MOSTUPDATE_PRIVATE_EVENTS \
+	  SXMUPDATE_PRIVATE_EVENTS \
+     AL_PRIVATE_EVENTS \
+     INSTALLATION_MANAGER_LIGHT_PRIVATE_EVENTS \
+   SAL_END_RANGE(REPROGRAMMING_PRIVATE, 125) \
+   \
+   SAL_START_RANGE(SXM_PRIVATE) \
+      SXM_ADVANCED_AUDIO_PRIVATE_EVENTS \
+      SXM_FWU_MGR_PRIVATE_EVENTS\
+      SXM_MANAGER_POWER_PRIVATE_EVENTS \
+      SXM_MANAGER_TUNE_PRIVATE_EVENTS \
+      SXM_PLAYBACK_MGR_PRIVATE_EVENTS \
+      SXM_SXE_DRIVER_PRIVATE_EVENTS \
+      SXM_SXI_LISTS_MGR_PRIVATE_EVENTS \
+      SXM_UTILITIES_MGR_PRIVATE_EVENTS \
+   SAL_END_RANGE(SXM_PRIVATE, 200) \
+
+
+/**
+ * System events that are public, which means the event ids can be used by
+ * modules other than the one declaring them.
+ *
+ * @note "Public" events cannot be subscribed to
+ * @see SAL_Send()
+ */
+#   define  SAL_PUBLIC_EVENTS \
+   SAL_START_RANGE(APPS_PUBLIC) \
+   SAL_END_RANGE(APPS_PUBLIC, 10) \
+   \
+   SAL_START_RANGE(AUDIO_PUBLIC) \
+      CHIMES_TASK_PUBLIC_EVENTS \
+      SSM_PUBLIC_EVENTS \
+      SSND_PUBLIC_EVENTS \
+   SAL_END_RANGE(AUDIO_PUBLIC, 25) \
+   \
+   SAL_START_RANGE(DIAG_PUBLIC) \
+     DIAG_INTERFACE_PUBLIC_EVENTS\
+      PITS_PUBLIC_EVENTS\
+   SAL_END_RANGE(DIAG_PUBLIC, 20) \
+   \
+   SAL_START_RANGE(MEDIA_PUBLIC) \
+      AFP_PUBLIC_EVENTS\
+      BTSTRM_CONNECTION_PUBLIC_EVENTS \
+      FILESYSTEM_PUBLIC_EVENTS \
+      IAP_NOTIFICATIONS_PUBLIC_EVENTS \
+      IPLAYER_PUBLIC_EVENTS \
+      IPOD_BGND_PUBLIC_EVENTS \
+      IPOD_CONTROL_PUBLIC_EVENTS \
+      IPOD_DATABASE_SYNC_PUBLIC_EVENTS \
+      METADATA_HANDLER_PUBLIC_EVENTS \
+      USB_CONNECTION_PUBLIC_EVENTS \
+      USB_DETECTION_PUBLIC_EVENTS \
+      VPD_CONTROL_PUBLIC_EVENTS \
+   SAL_END_RANGE(MEDIA_PUBLIC, 80) \
+   \
+   SAL_START_RANGE(MIRRORING_PUBLIC) \
+      ANDROIDAUTO_PUBLIC_EVENTS \
+      CARPLAY_PUBLIC_EVENTS \
+      CONN_MGR_PUBLIC_EVENTS \
+   SAL_END_RANGE(MIRRORING_PUBLIC, 30) \
+   \
+   SAL_START_RANGE(NAV_PUBLIC) \
+      NAV_CORE_PUBLIC_EVENTS\
+      GPS_PUBLIC_EVENTS\
+   SAL_END_RANGE(NAV_PUBLIC, 10) \
+   \
+   SAL_START_RANGE(PHONE_PUBLIC) \
+      BT_CM_PUBLIC_EVENTS \
+      BT_DIAG_PUBLIC_EVENTS \
+      BT_HFP_PUBLIC_EVENTS \
+      BT_MAP_PUBLIC_EVENTS \
+      BT_PBAP_PUBLIC_EVENTS \
+      BT_AS_PUBLIC_EVENTS \
+      PHONE_MGR_PUBLIC_EVENTS \
+      BT_STORAGE_MANAGER_PUBLIC_EVENTS\
+   SAL_END_RANGE(PHONE_PUBLIC, 10) \
+   \
+   SAL_START_RANGE(PLATFORM_PUBLIC) \
+      APM_PUBLIC_EVENTS \
+      PM_PUBLIC_EVENTS \
+      PS_PUBLIC_EVENTS \
+      SOH_PUBLIC_EVENTS \
+      THREAD_HDLR_PUBLIC_EVENTS \
+      XSALMT_PUBLIC_EVENTS \
+   SAL_END_RANGE(PLATFORM_PUBLIC, 15) \
+   \
+   SAL_START_RANGE(SYSTEM_PUBLIC) \
+      CAMERA_PUBLIC_EVENTS \
+      POWER_MODE_PUBLIC_EVENTS \
+      PROXI_PUBLIC_EVENTS \
+      TOUCH_MANAGER_PUBLIC_EVENTS \
+   SAL_END_RANGE(SYSTEM_PUBLIC, 10) \
+   \
+  SAL_START_RANGE(TUNER_PUBLIC) \
+      AMFM_NA_MNGR_PUBLIC_EVENTS \
+      AMFM_PUBLIC_EVENTS\
+      ED_TERM_PUBLIC_EVENTS\
+      TUNER_PUBLIC_EVENTS \
+      TUNER_MGR_MD_PUBLIC_EVENTS\
+      TUNER_PRESET_MGR_PUBLIC_EVENTS \
+   SAL_END_RANGE(TUNER_PUBLIC, 25) \
+   \
+   SAL_START_RANGE(VEHICLE_PUBLIC) \
+      IC_HANDLER_PUBLIC_EVENTS \
+      EI_INTERFACE_PUBLIC_EVENTS \
+   SAL_END_RANGE(VEHICLE_PUBLIC, 10) \
+   \
+   SAL_START_RANGE(REPROGRAMMING_PUBLIC) \
+      AL_PUBLIC_EVENTS \
+   SAL_END_RANGE(REPROGRAMMING_PUBLIC, 10) \
+   \
+   SAL_START_RANGE(VOICE_PUBLIC) \
+      ASR_MGR_PUBLIC_EVENTS \
+      PROMPT_MGR_PUBLIC_EVENTS \
+      VRDH_PUBLIC_EVENTS            \
+      VUI_ADAPTOR_PUBLIC_EVENTS \
+      VUI_MANAGER_PUBLIC_EVENTS \
+      VUI_DIAG_DATS_PUBLIC_EVENTS  \
+      VUI_DIAG_SRDL_PUBLIC_EVENTS   \
+   SAL_END_RANGE(VOICE_PUBLIC, 35) \
+   \
+   SAL_START_RANGE(SXM_PUBLIC) \
+      SXM_ADVANCED_AUDIO_PUBLIC_EVENTS \
+      SXM_FWU_MGR_PUBLIC_EVENTS \
+      SXM_MANAGER_POWER_PUBLIC_EVENTS \
+      SXM_MANAGER_TUNE_PUBLIC_EVENTS \
+      SXM_PLAYBACK_MGR_PUBLIC_EVENTS \
+      SXM_SXE_DRIVER_PUBLIC_EVENTS \
+      SXM_SXI_LISTS_MGR_PUBLIC_EVENTS \
+      SXM_UTILITIES_MGR_PUBLIC_EVENTS \
+    SAL_END_RANGE(SXM_PUBLIC, 20) \
+
+
+/**
+ * System events that are available for use with the XSAL Publish/Subscribe
+ * feature.
+ *
+ * @see SAL_Publish(), SAL_Subscribe()
+ */
+#   define  SAL_PUBLISHED_EVENTS \
+   SAL_START_RANGE(APPS_PUBLISH) \
+      VP2_APPS_MAN_PUBLISHED_EVENTS\
+   SAL_END_RANGE(APPS_PUBLISH, 25) \
+   \
+   SAL_START_RANGE(AUDIO_PUBLISH) \
+      AUDIO_PUBLISHED_EVENTS \
+      AUMGR_PUBLISHED_EVENTS \
+      AUMUTEMGR_PUBLISHED_EVENTS \
+      CHIMES_TASK_PUBLISHED_EVENTS \
+      SSM_PUBLISHED_EVENTS \
+      TONE_PUBLISHED_EVENTS \
+      SSND_PUBLISHED_EVENTS \
+   SAL_END_RANGE(AUDIO_PUBLISH, 150) \
+   \
+   SAL_START_RANGE(DIAG_PUBLISH) \
+     DIAG_INTERFACE_PUBLISHED_EVENTS\
+       PITS_PUBLISHED_EVENTS\
+   SAL_END_RANGE(DIAG_PUBLISH, 100) \
+   \
+   SAL_START_RANGE(MEDIA_PUBLISH) \
+      AFP_PUBLISHED_EVENTS\
+      BTSTRM_CONNECTION_PUBLISHED_EVENTS \
+      FILESYSTEM_PUBLISHED_EVENTS \
+      IAP_NOTIFICATIONS_PUBLISHED_EVENTS\
+      IPLAYER_PUBLISHED_EVENTS \
+      IPOD_BGND_PUBLISHED_EVENTS \
+      IPOD_CONTROL_PUBLISHED_EVENTS \
+      IPOD_DATABASE_SYNC_PUBLISHED_EVENTS \
+      METADATA_HANDLER_PUBLISHED_EVENTS \
+      USB_CONNECTION_PUBLISHED_EVENTS \
+      USB_DETECTION_PUBLISHED_EVENTS \
+      VPD_CONTROL_PUBLISHED_EVENTS \
+   SAL_END_RANGE(MEDIA_PUBLISH, 100) \
+   \
+   SAL_START_RANGE(MIRRORING_PUBLISH) \
+      ANDROIDAUTO_PUBLISHED_EVENTS \
+      CARPLAY_PUBLISHED_EVENTS \
+      CONN_MGR_PUBLISHED_EVENTS \
+   SAL_END_RANGE(MIRRORING_PUBLISH, 100) \
+   \
+   SAL_START_RANGE(NAV_PUBLISH) \
+      NAV_CORE_PUBLISHED_EVENTS\
+	  GPS_PUBLISHED_EVENTS\
+   SAL_END_RANGE(NAV_PUBLISH, 50) \
+   \
+   SAL_START_RANGE(PHONE_PUBLISH) \
+      BT_CM_PUBLISHED_EVENTS \
+      BT_SPP_HANDLER_PUBLISHED_EVENTS \
+      BT_SPP_PUBLISHED_EVENTS \
+      BT_DIAG_PUBLISHED_EVENTS \
+      BT_HFP_PUBLISHED_EVENTS \
+      BT_MAP_PUBLISHED_EVENTS \
+      BT_PBAP_PUBLISHED_EVENTS \
+      BT_AS_PUBLISHED_EVENTS \
+      PHONE_MGR_PUBLISHED_EVENTS \
+      HFAP_PUBLISHED_EVENTS \
+      BT_STORAGE_MANAGER_PUBLISHED_EVENTS\
+      PBDB_PUBLISHED_EVENTS\
+   SAL_END_RANGE(PHONE_PUBLISH, 200) \
+   \
+   SAL_START_RANGE(PLATFORM_PUBLISH) \
+      APM_PUBLISHED_EVENTS \
+      PM_PUBLISHED_EVENTS \
+      PS_PUBLISHED_EVENTS \
+      SALCPP_PUBLISHED_EVENTS \
+      SOH_PUBLISHED_EVENTS \
+      THREAD_HDLR_PUBLISHED_EVENTS \
+      XSALMT_PUBLISHED_EVENTS \
+   SAL_END_RANGE(PLATFORM_PUBLISH, 100) \
+   \
+   SAL_START_RANGE(SYSTEM_PUBLISH) \
+      CAMERA_PUBLISHED_EVENTS \
+      POWER_MODE_PUBLISHED_EVENTS \
+      PROXI_PUBLISHED_EVENTS \
+      TOUCH_MANAGER_PUBLISHED_EVENTS \
+   SAL_END_RANGE(SYSTEM_PUBLISH, 100) \
+   \
+   SAL_START_RANGE(TUNER_PUBLISH) \
+      AMFM_NA_MNGR_PUBLISHED_EVENTS \
+      AMFM_PUBLISHED_EVENTS\
+      ED_TERM_PUBLISHED_EVENTS\
+      TUNER_PUBLISHED_EVENTS \
+      TUNER_MGR_MD_PUBLISHED_EVENTS\
+      TUNER_PRESET_MGR_PUBLISHED_EVENTS \
+   SAL_END_RANGE(TUNER_PUBLISH, 175) \
+   \
+   SAL_START_RANGE(VEHICLE_PUBLISH) \
+      IC_HANDLER_PUBLISHED_EVENTS \
+      EI_PUBLISHED_EVENTS \
+   SAL_END_RANGE(VEHICLE_PUBLISH, 250) \
+   \
+   SAL_START_RANGE(VOICE_PUBLISH) \
+      ASR_MGR_PUBLISHED_EVENTS \
+      PROMPT_MGR_PUBLISHED_EVENTS \
+      VRDH_PUBLISHED_EVENTS            \
+      VUI_ADAPTOR_PUBLISHED_EVENTS \
+      VUI_MANAGER_PUBLISHED_EVENTS \
+      VUI_DIAG_DATS_PUBLISHED_EVENTS  \
+      VUI_DIAG_SRDL_PUBLISHED_EVENTS  \
+   SAL_END_RANGE(VOICE_PUBLISH, 150) \
+   \
+   SAL_START_RANGE(REPROGRAMMING_PUBLISH) \
+      IM_PUBLISHED_EVENTS \
+      IM_COMINTERFACE_PUBLISHED_EVENTS \
+      IM_INSTSERVICES_PUBLISHED_EVENTS \
+      IM_EXTERNAL_PUBLISHED_EVENTS \
+      GPSUPDATE_PUBLISHED_EVENTS \
+      AL_PUBLISHED_EVENTS \
+   SAL_END_RANGE(REPROGRAMMING_PUBLISH, 170) \
+   \
+   SAL_START_RANGE(SXM_PUBLISH) \
+      DIReCt_APP_PUBLISHED_EVENTS\
+      SXM_ADVANCED_AUDIO_PUBLISHED_EVENTS \
+      SXM_FWU_MGR_PUBLISHED_EVENTS\
+      SXM_MANAGER_POWER_PUBLISHED_EVENTS \
+      SXM_MANAGER_TUNE_PUBLISHED_EVENTS \
+      SXM_PLAYBACK_MGR_PUBLISHED_EVENTS \
+      SXM_SXE_DRIVER_PUBLISHED_EVENTS \
+      SXM_SXI_LISTS_MNG_PUBLISHED_EVENTS \
+      SXM_UTILITIES_MGR_PUBLISHED_EVENTS \
+    SAL_END_RANGE(SXM_PUBLISH, 350) \
+
+
+/* Expand event declarations to be the id tag followed by a comma. */
+#  undef  SAL_EVENT
+#  define SAL_EVENT(id,descr) id,
+#  define SAL_PRIVATE_EVENT(id,descr)   SAL_EVENT(id, descr)
+#  define SAL_PUBLIC_EVENT(id,descr)    SAL_EVENT(id, descr)
+#  define SAL_PUBLISHED_EVENT(id,descr) SAL_EVENT(id, descr)
+#  define SAL_START_RANGE(range)        SAL_EV_FIRST_##range,
+#  define SAL_END_RANGE(range, reserve) SAL_EV_LAST_##range = SAL_EV_FIRST_##range + reserve,
+
+/**
+ * System wide event identifiers.
+ *
+ * All published event identifiers need to be listed in this typedef between
+ * SAL_EVG_FIRST_PUBLISHED_EVENT_ID and SAL_EVG_LAST_PUBLISHED_EVENT_ID.
+ *
+ * All ISA message are allocated within the XSAL PUBLISHED event ID range, since they
+ * do not separate Publishable messages from non-publishable message.
+ *
+ * Public events are those that are shared between modules but are not
+ * available for use with SAL_Publish() and SAL_Subscribe(). These are assigned
+ * values between SAL_EVG_LAST_PUBLISHED_EVENT_ID and SAL_EV_FIRST_PRIVATE_ID.
+ *
+ * Tasks can use private event IDs starting at SAL_EV_FIRST_PRIVATE_ID. Private
+ * events include timer IDs, internal message sent via SAL_Send(), etc.
+ *
+ * Do not use a typedef of SAL_Event_Id_T as enum.  C++ strict type checking will
+ * break on enum to integer conversion.
+ *
+ * The values are assigned to overall ranges in case individual ranges with publish,
+ * public, or private.
+ */
+enum SAL_Event_Id_Tag
+{
+   /** RESERVED for XSAL, must be first; do not change! */
+   SAL_FIRST_EVENT_ID = 0,
+   SAL_EVG_FIRST_PUBLISHED_EVENT_ID = SAL_FIRST_EVENT_ID,
+
+   /* Allocate Ranges for ISA message events */
+   SAL_START_RANGE(ISA_IDS)
+
+      /* ECD event ranges. */
+      EV_ECD_FIRST,
+      EV_ECD_LAST = EV_ECD_FIRST + 40,
+
+      /* Installation Management event ranges. */
+      EV_IM_FIRST,
+      EV_IM_LAST = EV_IM_FIRST + 300,
+
+      /* Audio Manager event ranges. */
+      EV_AUDIOMANAGER_FIRST,
+      EV_AUDIOMANAGER_LAST = EV_AUDIOMANAGER_FIRST + 150,
+
+      /* DSI event ranges. */
+      EV_DSI_FIRST,
+      EV_DSI_LAST = EV_DSI_FIRST + 350,
+
+      /** PersistenceServices Events */
+      EV_PERSISTENCESERVICES_FIRST,
+      EV_PERSISTENCESERVICES_LAST = EV_PERSISTENCESERVICES_FIRST + 10,
+
+      /** PersistenceManager Events */
+      EV_PERSISTENCE_FIRST,
+      EV_PERSISTENCE_LAST=EV_PERSISTENCE_FIRST+50,
+      /** VIPPersistenceBridge Events */
+      EV_VIPPERSISTENCEBRIDGE_FIRST,
+      EV_VIPPERSISTENCEBRIDGE_LAST=EV_VIPPERSISTENCEBRIDGE_FIRST+10,
+
+      /* DAB Manager event ranges. */
+      EV_DABMANAGER_FIRST,
+      EV_DABMANAGER_LAST = EV_DABMANAGER_FIRST + 350,
+
+   SAL_END_RANGE(ISA_IDS, 2500)
+
+   /* BASA Published events IDs */
+   SAL_START_RANGE(BASA_PUBLISH)
+      SAL_PUBLISHED_EVENTS
+   SAL_END_RANGE(BASA_PUBLISH, 2500)
+
+   /** RESERVED for XSAL, must be last published event id; do not change! */
+   SAL_EVG_LAST_PUBLISHED_EVENT_ID = SAL_EV_LAST_BASA_PUBLISH,
+
+   /* BASA Public Message */
+   SAL_START_RANGE(BASA_PUBLIC)
+      SAL_PUBLIC_EVENTS
+   SAL_END_RANGE(BASA_PUBLIC, 1000)
+
+   /** BASA Private Messages */
+   SAL_START_RANGE(BASA_PRIVATE)
+      SAL_PRIVATE_EVENTS
+   SAL_END_RANGE(BASA_PRIVATE, 4000)
+
+   SAL_LAST_EVENT_ID  = SAL_EV_LAST_BASA_PRIVATE /* Must be last - do not move! */
+};
+
+/**
+ * Needed by XSAL to allocate space events. Do not change!
+ */
+#   define SAL_MAX_EVENTS (SAL_LAST_EVENT_ID-SAL_FIRST_EVENT_ID)
+
+/*===========================================================================*/
+/*!
+ * @file xsal_event_id.h
+ *
+ * @section RH REVISION HISTORY (top to bottom: first revision to last revision)
+ *
+ * - 18-Dec-2015 Kirk Bailey
+ *    - Updated to reflect VP2 usage
+ */
+/*===========================================================================*/
+/** @} doxygen end group */
+#endif /* XSAL_EVENT_ID_H */

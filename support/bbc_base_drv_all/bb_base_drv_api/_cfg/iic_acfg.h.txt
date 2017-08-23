@@ -1,0 +1,85 @@
+#ifndef IIC_ACFG_H
+#   define IIC_ACFG_H
+/*===========================================================================*/
+/**
+ * @file iic_acfg.h
+ *
+ * Micro / Board-specific IIC channel names
+ *
+ * %full_filespec: iic_acfg.h.txt~kok_basa#2:Text:kok_aud#1 %
+ * @version %version: kok_basa#2 %
+ * @author  %derived_by: jz4fpf %
+ * @date    %date_modified: Tue Nov 16 08:19:59 2010 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2010 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * @section DESC DESCRIPTION:
+ *
+ * Defines standard set of IIC channels
+ *
+ * @section ABBR ABBREVIATIONS:
+ *
+ * @section TRACE TRACEABILITY INFO:
+ *   - Design Document(s):
+ *
+ *   - Requirements Document(s):
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]
+ *
+ * @section DFS DEVIATIONS FROM STANDARDS:
+ *   - @todo List of deviations from standards in this file, or "None".
+ *
+ * @addtogroup iic_grp
+ * @{
+ */
+/*===========================================================================*/
+
+#error "THIS IS A TEMPLATE CFG FILE. PLEASE CONFIGURE FOR YOUR SYSTEM."
+
+/*===========================================================================*\
+ * Header Files
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Exported Preprocessor #define X-MACROS 
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Exported Type Declarations
+\*===========================================================================*/
+
+/**
+ * Define IIC Channels
+ */
+typedef enum IIC_Channel_Tag
+{
+      IIC_CHANNEL_0,       /**< AP IIC Channel 0 */
+      IIC_CHANNEL_1,       /**< AP IIC Channel 1 */
+      IIC_CHANNEL_2,       /**< AP IIC Channel 2 */
+      IIC_CHANNEL_3,       /**< AP IIC Channel 3 */
+      NUMBER_IIC_CHANNELS, /**< Number of AP IIC Channels  */
+      
+      IIC_CHANNEL_V0 = NUMBER_IIC_CHANNELS, /**< VIP IIC Channel 0 */
+      IIC_CHANNEL_V1,      /**< VIP IIC Channel 1 */
+      IIC_CHANNEL_V2,      /**< VIP IIC Channel 2 */
+      TOTAL_IIC_CHANNELS   /**< Total AP & VIP IIC Channels */
+} IIC_Channel_T;
+
+/*===========================================================================*\
+ * File Revision History (top to bottom: first revision to last revision)
+ *===========================================================================
+ *
+ * Date        userid    (Description on following lines: SCR #, etc.)
+ * ----------- --------
+ * DAY-MON-DATE initials-location (example KWK-KOK)
+ * + Created initial file.
+ *
+\*===========================================================================*/
+/** @} doxygen end group */
+#endif /* iic_H */

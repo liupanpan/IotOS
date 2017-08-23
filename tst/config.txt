@@ -1,0 +1,7 @@
+# Defined configurations:
+# 0 - core processes  (default configuration)
+# 
+-f ./test_timer -l10 -n "Main software" -c0
+
+
+

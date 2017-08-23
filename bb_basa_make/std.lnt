@@ -1,0 +1,15 @@
+//  Generic Compilers, -si2 -spN2 -spF4, 
+//  Standard lint options
+
+
+co.lnt
+
+options.lnt  -si2 -spN2 -spF4
+-si2 -spN2 -spF4
+
+
+
+
+// ((((4096 * 2) * 2) * 2) * 2) = 65536 characters for #define/macro invocation
+// E&C is known to have some really long #defines
++macros +macros +macros +macros

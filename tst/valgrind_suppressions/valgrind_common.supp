@@ -1,0 +1,77 @@
+#=============================================================================
+#
+# %full_filespec: valgrind_common.supp~3:ascii:kok_inf#1 %
+# %version: 3 %
+# %derived_by: czhswm %
+# %date_modified: Tue Oct 29 11:02:08 2013 %
+#
+#=============================================================================
+#
+# This file contains Valgrind suppressions for common Valgrind issues that
+# should be ignored.
+#
+#=============================================================================
+
+
+#=============================================================================
+# Usage:
+#-----------------------------------------------------------------------------
+# - Running Valgrind from the command line:
+#
+#    - Add the following Valgrind option to the command line (modify path as
+#      needed):
+#
+#      --suppressions=/home/user/ccm_wa/kok_inf/mdf_xsal_util/tst/valgrind_suppressions/valgrind.supp
+#
+#
+#    - Adding the following Vagrind option to the command line will cause
+#      Valgrind to output a sample suppression for any errors that occur.
+#      This sample suppression can be used to suppress the error if needed.
+#
+#      --gen-suppressions=all
+#
+#
+# - Running Valgrind from Eclipse:
+#
+#    - When setting up the Valgrind profile configuration, select the
+#      "Valgrind Options" tab, then the "Suppressions" tab.  Here you can
+#      list all the suppression files to be used.
+#
+#
+# NOTE: This file should only be used for suppressions that are applicable to
+#    many or most projects.  Suppressions that are project-specific can be
+#    specified in another file in the project.  Valgrind allows multiple
+#    suppression files to be specified.
+#
+#=============================================================================
+
+
+#-----------------------------------------------------------------------------
+# Suppression for pthread_create() which allocates memory for thread stacks
+# but does not free that memory so it can manage that memory itself.  This is
+# per the pthread_create() design and is not a problem.
+#-----------------------------------------------------------------------------
+{
+   Suppress leak of pthread_create() thread stack.
+   Memcheck:Leak
+   fun:calloc
+   fun:allocate_dtv
+   fun:_dl_allocate_tls
+   fun:pthread_create@@GLIBC_2.1
+}
+
+#=============================================================================
+# Revisions:
+#-----------------------------------------------------------------------------
+# - 19Sep13  David Origer  Rev. 1
+#    - Suppression for pthread_create() thread stack.
+#
+# - 25-Oct-2013 Joel Kiger Rev 2
+#   - Suppress DESIP errors from not shutting down.
+#
+# - 29-Oct-2013 Larry Piekarski Rev 3
+#   Task 2462: Back out project specific changes. Custom supression moved 
+#   to a new file for the aa1173ab project.
+#
+#=============================================================================
+

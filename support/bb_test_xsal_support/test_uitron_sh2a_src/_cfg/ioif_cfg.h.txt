@@ -1,0 +1,112 @@
+#ifndef IOIF_CFG_H
+#   define IOIF_CFG_H
+/*===========================================================================*/
+/**
+ * @file ioif_cfg.h
+ *
+ * Configuration options for I/O interface.
+ *
+ * %full_filespec:ioif_cfg.h.txt-1:Text:kok_aud#3 %
+ * @version %version:1 %
+ * @author  %derived_by:jz4fpf %
+ * @date    %date_modified:Tue Mar  6 15:24:40 2007 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2007 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * DESCRIPTION:
+ *
+ * ABBREVIATIONS:
+ *   - ioif = I/O (Input/Output) Interface
+ *
+ * TRACEABILITY INFO:
+ *   - Design Document(s):
+ *
+ *   - Requirements Document(s):
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - <a href="http://kogespw1.delcoelect.com:8508/passthru/consumer?name=SW%20REF%20264.15D&doctype=K8DBSDoc">
+ *       SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]</a>
+ *     - @todo Update list of other applicable standards
+ *
+ * DEVIATIONS FROM STANDARDS:
+ *   - None
+ *
+ */
+/*==========================================================================*/
+
+/*===========================================================================*\
+ * Header Files
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * #define Constants
+\*===========================================================================*/
+
+#   define IOIF_MAX_DEVICES    10
+#   define IOIF_MAX_DRIVERS    10
+#   define IOIF_MAX_FILES      20
+#   define IOIF_AIO_PRIORITY   12
+
+/**
+ * Defining this constant does two things: 1) it enables the initialization
+ * logic for the SCIF port driver, and 2) it provides the path name for the
+ * SCIF device. If the serial port driver is not to be initialized and used,
+ * do not define the symbol. NOTE: The values of the other "IOIF_SCIF"
+ * configurations are only meaningful if this constant is defined.
+ */
+/*#   define IOIF_SCIF_DEVICE_PATH "dev\\scif"*/
+
+/** Initial SCIF interrupt level. */
+#   define IOIF_SCIF_INT_LVL 3
+
+/** Initial SCIF baud rate. */
+#   define IOIF_SCIF_BAUD_RATE 115200
+
+/** Initial SCIF number of data bits. */
+#   define IOIF_SCIF_DATA_BITS 8
+
+/** Initial SCIF number of data bits. */
+#   define IOIF_SCIF_STOP_BITS   1
+
+/** Initial SCIF number parity. */
+#   define IOIF_SCIF_PARITY -1
+
+/**
+ * Defining this constant does two things: 1) it enables the initialization
+ * logic for the simulated I/O driver, and 2) it provides the path name for the
+ * simulated i/o device. If the simulated i/o driver is not to be initialized
+ * and used, do not define the symbol.
+ */
+/*#   define IOIF_SIMULATED_IO_DEVICE_PATH "dev\\simio"*/
+
+/**
+ * This constant must be defined to either NULL, or to one of the enabled
+ * device driver paths; it specifies which device is associated with stdout,
+ * stdin, and stderr I/O.
+ */
+/*#   define IOIF_STD_DEVICE_PATH IOIF_SIMULATED_IO_DEVICE_PATH*/
+
+/*===========================================================================*\
+ * #define MACROS
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Custom Type Declarations
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * File Revision History (top to bottom: last revision to first revision)
+ *===========================================================================
+ *
+ * Date        userid    (Description on following lines: SCR #, etc.)
+ * ----------- --------
+ * 30-jan-2007 dzq92s
+ * + Created initial file.
+ *
+\*===========================================================================*/
+#endif /* IOIF_CFG_H */

@@ -1,0 +1,415 @@
+[1502774086.931757] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774086.931613] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774087.000612] 2:0; test_alloc_free.c:74; INFO_HI - Test PASSED
+
+[1502774087.002068] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774087.003678] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.003731] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.003767] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.003787] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.004469] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.004485] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.004501] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.004556] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.005034] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.005049] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.005053] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.005124] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.006316] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.006331] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.033813] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.033909] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.034950] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.034973] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.042578] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.042593] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.044485] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.044501] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.044546] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.044614] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.045089] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.045103] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.045151] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.045196] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.091455] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.091471] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.091549] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.091793] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.092464] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.092479] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.092482] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.092536] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.093546] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.093668] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.093790] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.093869] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.094556] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.094796] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.094877] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.095028] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.096293] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.096320] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.096938] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.097329] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.098296] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.098381] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.100241] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[1502774087.100627] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[1502774087.001972] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774087.100968] 2:0; test_buffer_pool.c:521; INFO_HI - Test PASSED
+[1502774087.103797] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774087.103702] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774087.212313] 2:0; test_clock.c:85; INFO_HI - Test PASSED
+
+[1502774087.213535] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774087.213444] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774087.232671] 2:0; test_message_queue.c:975; INFO_HI - Test PASSED
+[1502774087.233688] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774089.340287] 2:6; xsal_mutex_linux.c:246; WARN - SAL_Lock_Mutex_Timeout - Timed out after 100 mS. Mutex Owner: 5
+[1502774098.108988] 2:6; test_mutex.c:1237; FAULT - Shared count 276 incremented 4 extra times
+[1502774098.114244] 2:5; test_mutex.c:1225; FAULT - Got shared Mutex 4 times in a row. Count 277
+[1502774087.233619] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774087.233808] 2:0; test_mutex.c:1611; INFO_HI - Mutex Test Suite
+[1502774093.992425] 2:0; test_mutex.c:1264; INFO_HI - Start Share Mutex Test at Priority 25
+[1502774096.447749] 2:0; test_mutex.c:1264; INFO_HI - Start Share Mutex Test at Priority 60
+[1502774098.873529] 2:0; test_mutex.c:1794; INFO_HI - Test PASSED
+[1502774098.893385] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774099.028492] 2:5; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1502774099.047068] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 8 Size: 17
+[1502774099.047116] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 8 Size: 17
+[1502774099.047126] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 4 Event: 8 Size: 17
+[1502774099.047133] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 5 Event: 8 Size: 17
+[1502774098.893283] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774099.028445] 2:1; test_publish.c:1016; INFO_HI - Subscribe/Unsubscribe to empty lists worked.
+[1502774099.028539] 2:2; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec2]: Start
+[1502774099.028650] 2:4; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec4]: Start
+[1502774099.028768] 2:5; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec5]: Start
+[1502774099.038910] 2:3; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec3]: Start
+[1502774099.039478] 2:2; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec2]: Stop, ret = 0
+[1502774099.039485] 2:2; test_publish.c:690; INFO_HI - Receive_Test 2_1[LRec2]: Start
+[1502774099.040010] 2:1; test_publish.c:839; INFO_HI - Publish_Test 1 Ok
+[1502774099.040025] 2:5; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec5]: Stop, ret = 0
+[1502774099.040030] 2:5; test_publish.c:690; INFO_HI - Receive_Test 2_2[LRec5]: Start
+[1502774099.040032] 2:3; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec3]: Stop, ret = 0
+[1502774099.040038] 2:3; test_publish.c:690; INFO_HI - Receive_Test 2_2[LRec3]: Start
+[1502774099.040741] 2:4; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec4]: Stop, ret = 0
+[1502774099.040747] 2:4; test_publish.c:690; INFO_HI - Receive_Test 2_1[LRec4]: Start
+[1502774099.040826] 2:1; test_publish.c:839; INFO_HI - Publish_Test 2 Ok
+[1502774099.040836] 2:5; test_publish.c:752; INFO_HI - Receive_Test2_2[LRec5]: Stop, ret = 0
+[1502774099.040839] 2:5; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec5]: Start
+[1502774099.040838] 2:2; test_publish.c:752; INFO_HI - Receive_Test2_1[LRec2]: Stop, ret = 0
+[1502774099.040843] 2:2; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec2]: Start
+[1502774099.040965] 2:3; test_publish.c:752; INFO_HI - Receive_Test2_2[LRec3]: Stop, ret = 0
+[1502774099.040970] 2:3; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec3]: Start
+[1502774099.041067] 2:4; test_publish.c:752; INFO_HI - Receive_Test2_1[LRec4]: Stop, ret = 0
+[1502774099.041072] 2:4; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec4]: Start
+[1502774099.041176] 2:1; test_publish.c:839; INFO_HI - Publish_Test 3 Ok
+[1502774099.041190] 2:2; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec2]: Stop, ret = 0
+[1502774099.041194] 2:2; test_publish.c:690; INFO_HI - Receive_Test 4_1[LRec2]: Start
+[1502774099.041267] 2:4; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec4]: Stop, ret = 0
+[1502774099.041271] 2:4; test_publish.c:690; INFO_HI - Receive_Test 4_1[LRec4]: Start
+[1502774099.041313] 2:3; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec3]: Stop, ret = 0
+[1502774099.041317] 2:3; test_publish.c:690; INFO_HI - Receive_Test 4_2[LRec3]: Start
+[1502774099.041359] 2:5; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec5]: Stop, ret = 0
+[1502774099.041364] 2:5; test_publish.c:690; INFO_HI - Receive_Test 4_2[LRec5]: Start
+[1502774099.041440] 2:1; test_publish.c:839; INFO_HI - Publish_Test 4 Ok
+[1502774099.041449] 2:5; test_publish.c:752; INFO_HI - Receive_Test4_2[LRec5]: Stop, ret = 0
+[1502774099.041451] 2:5; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec5]: Start
+[1502774099.041505] 2:3; test_publish.c:752; INFO_HI - Receive_Test4_2[LRec3]: Stop, ret = 0
+[1502774099.041509] 2:3; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec3]: Start
+[1502774099.042370] 2:2; test_publish.c:752; INFO_HI - Receive_Test4_1[LRec2]: Stop, ret = 0
+[1502774099.042376] 2:2; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec2]: Start
+[1502774099.044478] 2:4; test_publish.c:752; INFO_HI - Receive_Test4_1[LRec4]: Stop, ret = 0
+[1502774099.044489] 2:4; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec4]: Start
+[1502774099.047156] 2:1; test_publish.c:839; INFO_HI - Publish_Test 5 Ok
+[1502774099.047169] 2:5; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec5]: Stop, ret = 0
+[1502774099.047173] 2:5; test_publish.c:690; INFO_HI - Receive_Test 6_2[LRec5]: Start
+[1502774099.047328] 2:2; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec2]: Stop, ret = 0
+[1502774099.047333] 2:2; test_publish.c:690; INFO_HI - Receive_Test 6_1[LRec2]: Sta[1502774099.083426] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774099.083464] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774099.083474] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774099.083481] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+rt
+[1502774099.083179] 2:3; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec3]: Stop, ret = 0
+[1502774099.083189] 2:3; test_publish.c:690; INFO_HI - Receive_Test 6_2[LRec3]: Start
+[1502774099.083296] 2:4; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec4]: Stop, ret = 0
+[1502774099.083301] 2:4; test_publish.c:690; INFO_HI - Receive_Test 6_1[LRec4]: Start
+[1502774099.083501] 2:1; test_publish.c:839; INFO_HI - Publish_Test 6 Ok
+[1502774099.083556] 2:5; test_publish.c:752; INFO_HI - Receive_Test6_2[LRec5]: Stop, ret = 0
+[1502774099.083603] 2:2; test_publish.c:752; INFO_HI - Receive_Test6_1[LRec2]: Stop, ret = 0
+[1502774099.083908] 2:3; test_publish.c:752; INFO_HI - Receive_Test6_2[LRec3]: Stop, ret = 0
+[1502774099.083941] 2:4; test_publish.c:752; INFO_HI - Receive_Test6_1[LRec4]: Stop, ret = 0
+[1502774099.106890] 2:0; test_publish.c:1859; INFO_HI - Test PASSED
+[1502774099.169538] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774099.173202] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 0
+[1502774099.173244] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 0
+[1502774099.173256] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 0
+[1502774099.173264] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 0
+[1502774099.318492] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 3 Size: 0
+[1502774099.318530] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 1
+[1502774099.320778] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1502774099.320801] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 2
+[1502774099.320809] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1502774099.320816] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 2
+[1502774099.322393] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1502774099.322425] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 3
+[1502774099.322435] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1502774099.322443] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 3
+[1502774099.169452] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774099.323641] 2:0; test_publish_callback.c:1701; INFO_HI - Test PASSED
+[1502774099.326264] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774099.413103] 2:5; xsal_send.c:98; FAULT - Dropped Local Send TID: 6 Event: 40 Data: 0 Size: 0
+[1502774102.415020] 2:4; test_receive_only.c:969; FAULT - Wait Destroy Timeout has been reached
+[1502774102.432573] 2:5; test_receive_only.c:505; FAULT - Timeout has been reached
+test_receive_only: support/bbc_trace/bb_dbg_trace_c99/bb_dbg_trace_c99_imp/_src/em_assert_c99.c:86: EM_Assert: Assertion `0' failed.
+[1502774099.326149] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774102.415066] 2:4; dbg_call_stack_backtrace_c99.c:168; FAULT - Stack backtrace: 0x805ca90 0x804b53b 0x804d05d 0xb7796d4c 0xb76addde
+Aborted (core dumped)
+[1502774103.739766] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774104.835677] 2:2; test_semaphore.c:199; FAULT - SAL_Wait_Semaphore_Timeout: thread has been suspended for 1095 ms, expected time: 1000 ms
+test_semaphore: support/bbc_trace/bb_dbg_trace_c99/bb_dbg_trace_c99_imp/_src/em_assert_c99.c:86: EM_Assert: Assertion `0' failed.
+[1502774103.739660] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774104.835744] 2:2; dbg_call_stack_backtrace_c99.c:168; FAULT - Stack backtrace: 0x805a0a0 0x804b1a7 0x804c48d 0xb777fd4c 0xb7696dde
+Aborted (core dumped)
+[1502774105.224099] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774105.226549] 2:7; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1502774105.227039] 2:2; xsal_send.c:98; FAULT - Dropped Local Send TID: 1 Event: 5 Data: 0 Size: 0
+[1502774105.227082] 2:6; xsal_send.c:98; FAULT - Dropped Local Send TID: 5 Event: 5 Data: 0 Size: 0
+[1502774105.227623] 2:4; xsal_send.c:98; FAULT - Dropped Local Send TID: 3 Event: 5 Data: 0 Size: 0
+[1502774105.227670] 2:8; xsal_send.c:98; FAULT - Dropped Local Send TID: 7 Event: 5 Data: 0 Size: 0
+[1502774105.227724] 2:4; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774105.228088] 2:8; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774105.228175] 2:6; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774105.228178] 2:2; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774105.224001] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774105.226465] 2:2; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1502774105.226488] 2:4; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1502774105.226564] 2:1; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1502774105.226575] 2:3; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1502774105.226609] 2:2; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1502774105.226659] 2:3; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1502774105.226666] 2:5; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1502774105.226622] 2:4; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1502774105.226629] 2:6; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1502774105.226637] 2:1; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1502774105.226881] 2:2; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1502774105.226917] 2:6; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1502774105.226928] 2:5; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1502774105.226937] 2:1; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1502774105.226966] 2:6; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1502774105.226980] 2:5; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1502774105.226988] 2:2; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1502774105.227001] 2:6; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1502774105.227006] 2:8; test_send.c:649; INFO_HI - Send_Test 1: 0
+[1502774105.227008] 2:1; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1502774105.227017] 2:7; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[1502774105.227037] 2:5; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1502774105.227066] 2:2; test_send.c:697; INFO_HI - Send_Test_5 0
+[1502774105.227107] 2:4; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1502774105.227109] 2:1; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1502774105.227083] 2:8; test_send.c:649; INFO_HI - Send_Test 2: 0
+[1502774105.227115] 2:3; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1502774105.227094] 2:7; test_send.c:589; INFO_HI - Receive_Test 2: 0
+[1502774105.227557] 2:8; test_send.c:649; INFO_HI - Send_Test 3: 0
+[1502774105.227568] 2:7; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[1502774105.227576] 2:4; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1502774105.227596] 2:3; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1502774105.227605] 2:8; test_send.c:649; INFO_HI - Send_Test 4: 0
+[1502774105.227621] 2:7; test_send.c:589; INFO_HI - Receive_Test 4: 0
+[1502774105.227662] 2:4; test_send.c:697; INFO_HI - Send_Test_5 0
+[1502774105.227673] 2:3; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1502774105.227744] 2:4; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1502774105.227754] 2:3; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1502774105.228049] 2:8; test_send.c:697; INFO_HI - Send_Test_5 0
+[1502774105.228062] 2:7; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1502774105.228109] 2:8; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1502774105.228122] 2:7; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1502774105.228151] 2:6; test_send.c:697; INFO_HI - Send_Test_5 0
+[1502774105.228159] 2:5; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[1502774105.228236] 2:2; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1502774105.228248] 2:1; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1502774105.228351] 2:6; test_send.c:649; INFO_HI - Send_Test 6: 0
+[1502774105.228363] 2:5; test_send.c:589; INFO_HI - Receive_Test 6: 0
+[1502774105.229489] 2:0; test_send.c:1522; INFO_HI - Test PASSED
+[1502774105.264933] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774105.310666] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 0 Size: 0
+[1502774105.310711] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 0
+[1502774105.312256] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 3 Data: 0 Size: 0
+[1502774105.312277] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 1
+[1502774105.313279] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[1502774105.313303] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 2
+[1502774105.338188] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[1502774105.338248] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 3
+[1502774105.264849] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774105.342459] 2:0; test_send_callback.c:1456; INFO_HI - Test PASSED
+[1502774105.343732] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774105.343886] 2:0; test_thread.c:1718; FAULT - Round Robin Interval 0.016001000 secs
+[1502774110.518347] 2:14; xsal_send.c:98; FAULT - Dropped Local Send TID: 13 Event: 1 Data: 0 Size: 0
+[1502774112.243042] 2:14; xsal_send.c:98; FAULT - Dropped Local Send TID: 13 Event: 1 Data: 0 Size: 0
+[1502774105.343640] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774112.884280] 2:0; test_thread.c:1785; INFO_HI - Test PASSED
+[1502774112.975932] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774138.698916] 2:5; test_timer.c:1719; FAULT - Periodic_Ex_Test/ wrong ticks number: 1/10, 1/5
+[1502774112.975819] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774138.699265] 2:0; test_timer.c:1811; INFO_HI - Test PASSED
+[1502774138.700427] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774138.700329] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774138.700961] 2:9; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.702422] 2:10; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.702972] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.704541] 2:12; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.704953] 2:13; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.706887] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[1502774138.708250] 2:0; test_unknown_thread.c:421; INFO_HI - Test PASSED
+[1502774138.709317] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774138.709234] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774138.710328] 2:1; test_cond.c:82; INFO_HI - WAIT_THREAD is waiting...
+[1502774138.710354] 2:1; test_cond.c:87; INFO_HI - Number = 5
+[1502774138.913188] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.913212] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.913866] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.913888] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.914861] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.914880] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.915869] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.915893] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.916888] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.916922] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.917874] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.917911] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.918887] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.919013] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.919866] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.919889] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.920867] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.920891] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.921882] 2:3; test_cond.c:160; INFO_HI - Producer produces product
+[1502774138.921902] 2:4; test_cond.c:187; INFO_HI - Consumer consumes product
+[1502774138.923095] 2:0; test_cond.c:304; INFO_HI - Test PASSED
+[1502774138.924377] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774138.928515] 2:5; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[1502774138.937935] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 8 Size: 17
+[1502774138.937959] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 8 Size: 17
+[1502774138.937966] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 4 Event: 8 Size: 17
+[1502774138.937973] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 5 Event: 8 Size: 17
+[1502774138.924301] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774138.928343] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test1_1[LRec2]: Start
+[1502774138.928410] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test1_1[LRec4]: Start
+[1502774138.929080] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test1_2[LRec5]: Start
+[1502774138.929229] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test1_2[LRec3]: Start
+[1502774138.929293] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.929307] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test1_1[LRec2]: Stop, ret = 0
+[1502774138.929310] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test2_1[LRec2]: Start
+[1502774138.929359] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test1_1[LRec4]: Stop, ret = 0
+[1502774138.929363] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test2_1[LRec4]: Start
+[1502774138.929386] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test1_2[LRec3]: Stop, ret = 0
+[1502774138.929389] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test2_2[LRec3]: Start
+[1502774138.929440] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test1_2[LRec5]: Stop, ret = 0
+[1502774138.929444] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test2_2[LRec5]: Start
+[1502774138.929577] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.929585] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test2_1[LRec2]: Stop, ret = 0
+[1502774138.929588] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test3_1[LRec2]: Start
+[1502774138.929636] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test2_1[LRec4]: Stop, ret = 0
+[1502774138.929639] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test3_1[LRec4]: Start
+[1502774138.929661] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test2_2[LRec3]: Stop, ret = 0
+[1502774138.929664] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test3_2[LRec3]: Start
+[1502774138.929709] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test2_2[LRec5]: Stop, ret = 0
+[1502774138.929713] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test3_2[LRec5]: Start
+[1502774138.935381] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test3_1[LRec2]: Stop, ret = 0
+[1502774138.935386] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test4_1[LRec2]: Start
+[1502774138.935438] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.935455] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test3_2[LRec3]: Stop, ret = 0
+[1502774138.935457] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test4_2[LRec3]: Start
+[1502774138.936383] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test3_1[LRec4]: Stop, ret = 0
+[1502774138.936389] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test4_1[LRec4]: Start
+[1502774138.936898] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test3_2[LRec5]: Stop, ret = 0
+[1502774138.936903] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test4_2[LRec5]: Start
+[1502774138.937022] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test4_1[LRec2]: Stop, ret = 0
+[1502774138.937026] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test5_1[LRec2]: Start
+[1502774138.937073] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.937082] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test4_2[LRec3]: Stop, ret = 0
+[1502774138.937084] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test5_2[LRec3]: Start
+[1502774138.937145] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test4_1[LRec4]: Stop, ret = 0
+[1502774138.937148] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test5_1[LRec4]: Start
+[1502774138.937234] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test4_2[LRec5]: Stop, ret = 0
+[1502774138.937238] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test5_2[LRec5]: Start
+[1502774138.937986] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test5_1[LRec2]: Stop, ret = 0
+[1502774138.937989] 2:2; test_local_publish.c:617; INFO_HI - Receive_Test6_1[LRec2]: Start
+[1502774138.938031] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.938039] 2:3; test_local_publish.c[1502774138.938905] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774138.938920] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774138.938928] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+[1502774138.938935] 2:1; xsal_i_message_queue.c:134; FAULT - Queue is full and a new urgent message has arived. The last non-urgent message is removed from queue
+:662; INFO_HI - Receive_Test5_2[LRec3]: Stop, ret = 0
+[1502774138.938055] 2:3; test_local_publish.c:617; INFO_HI - Receive_Test6_2[LRec3]: Start
+[1502774138.938108] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test5_1[LRec4]: Stop, ret = 0
+[1502774138.938112] 2:4; test_local_publish.c:617; INFO_HI - Receive_Test6_1[LRec4]: Start
+[1502774138.938252] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test5_2[LRec5]: Stop, ret = 0
+[1502774138.938257] 2:5; test_local_publish.c:617; INFO_HI - Receive_Test6_2[LRec5]: Start
+[1502774138.938948] 2:2; test_local_publish.c:662; INFO_HI - Receive_Test6_1[LRec2]: Stop, ret = 0
+[1502774138.939012] 2:1; test_local_publish.c:734; INFO_HI - Publish_Test: Ok
+[1502774138.939032] 2:3; test_local_publish.c:662; INFO_HI - Receive_Test6_2[LRec3]: Stop, ret = 0
+[1502774138.939125] 2:5; test_local_publish.c:662; INFO_HI - Receive_Test6_2[LRec5]: Stop, ret = 0
+[1502774138.939864] 2:4; test_local_publish.c:662; INFO_HI - Receive_Test6_1[LRec4]: Stop, ret = 0
+[1502774138.940207] 2:0; test_local_publish.c:1500; INFO_HI - Test PASSED
+[1502774138.941609] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774138.942707] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 0
+[1502774138.942725] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 0
+[1502774138.942733] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 0
+[1502774138.942740] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 0
+[1502774139.019905] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 3 Size: 0
+[1502774139.019943] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 1
+[1502774139.021927] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1502774139.021946] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 2
+[1502774139.021954] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1502774139.021960] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 2
+[1502774139.023903] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Size: 4
+[1502774139.023922] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 2, reason: 3
+[1502774139.023929] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Size: 4
+[1502774139.023935] 2:1; test_local_publish_callback.c:169; FAULT - Message dropped in thread: 3, reason: 3
+[1502774138.941525] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774139.024178] 2:0; test_local_publish_callback.c:679; INFO_HI - Test PASSED
+[1502774139.025258] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774139.025184] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774141.240922] 2:2; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 500
+[1502774141.741951] 2:3; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 501
+[1502774142.243403] 2:2; test_receive_from.c:809; INFO_HI - SAL_Receive_From_Timeout: suspends the thread, time: 502
+[1502774142.251264] 2:0; test_receive_from.c:1050; INFO_HI - Test PASSED
+[1502774142.253675] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774142.252568] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774142.256540] 2:1; test_rpc.c:151; INFO_HI - Server_Test_Pulse START
+[1502774142.256580] 2:2; test_rpc.c:178; INFO_HI - Client_Test_Pulse START
+[1502774142.260546] 2:2; test_rpc.c:186; INFO_HI - Client_Test_Pulse STOP
+[1502774142.260551] 2:1; test_rpc.c:164; INFO_HI - Server_Test_Pulse STOP
+[1502774142.267702] 2:1; test_rpc.c:211; INFO_HI - Server_Test_Send START
+[1502774142.267713] 2:2; test_rpc.c:235; INFO_HI - Client_Test_Send START
+[1502774142.272555] 2:1; test_rpc.c:224; INFO_HI - Server_Test_Send STOP
+[1502774142.272624] 2:2; test_rpc.c:246; INFO_HI - Client_Test_Send STOP
+[1502774142.274132] 2:2; test_rpc.c:297; INFO_HI - Client_Test_Send_VS START
+[1502774142.274170] 2:1; test_rpc.c:273; INFO_HI - Server_Test_Send_VS START
+[1502774142.280235] 2:1; test_rpc.c:286; INFO_HI - Server_Test_Send_VS STOP
+[1502774142.280311] 2:2; test_rpc.c:319; INFO_HI - Client_Test_Send_VS STOP
+[1502774142.281752] 2:2; test_rpc.c:380; INFO_HI - Client_Test_Send_SV START
+[1502774142.281782] 2:1; test_rpc.c:345; INFO_HI - Server_Test_Send_SV START
+[1502774142.286457] 2:1; test_rpc.c:366; INFO_HI - Server_Test_Send_SV STOP
+[1502774142.286524] 2:2; test_rpc.c:403; INFO_HI - Client_Test_Send_SV STOP
+[1502774142.347524] 2:0; test_rpc.c:813; INFO_HI - Test PASSED
+[1502774142.348877] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774142.348772] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774149.223648] 2:0; test_rwlock.c:2094; INFO_HI - Test PASSED
+[1502774150.227001] 2:0; dbg_trace_ps.c:131; WARN - Incorrect size (0) for file. Expecting 41.
+[1502774150.226917] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774150.227165] 2:0; test_shared_memory.c:259; INFO_HI - CreateMemProcess
+[1502774150.302908] 2:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1502774149.225459] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774149.225564] 3:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_SERVICE (No such file or directory). Using default dbg_trace levels.
+[1502774149.225680] 3:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1502774150.303708] 3:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1502774149.224989] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774149.225098] 5:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_CLIENT2 (No such file or directory). Using default dbg_trace levels.
+[1502774149.225263] 5:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1502774150.304886] 5:0; test_shared_memory.c:400; INFO_HI - Test PASSED
+[1502774149.226258] 0:0; xsal_init.c:42; INFO_HI - XSAL 2015-12-18
+[1502774149.226344] 4:0; dbg_trace_ps.c:116; INFO_HI - Could not open /var/.dbg_trace_lvls_APP_COUNT_CLIENT (No such file or directory). Using default dbg_trace levels.
+[1502774149.226440] 4:0; test_shared_memory.c:270; INFO_HI - ReadMemProcess
+[1502774150.304913] 4:0; test_shared_memory.c:400; INFO_HI - Test PASSED

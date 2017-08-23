@@ -1,0 +1,182 @@
+[27335.558000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27335.811000] 2:0; test_alloc_free.c:74; INFO_HI - Test PASSED
+
+[27336.027000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27336.132000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[27336.132000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[27336.132000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 0
+[27336.132000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 1
+[27336.136000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 2
+[27336.136000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 2
+[27336.136000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 3
+[27336.136000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 3
+[27336.140000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 4
+[27336.140000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 5
+[27336.140000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 4
+[27336.140000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 5
+[27336.144000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 6
+[27336.144000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 7
+[27336.144000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 6
+[27336.144000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 7
+[27336.152000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 8
+[27336.152000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 9
+[27336.152000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 8
+[27336.152000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 9
+[27336.155000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 10
+[27336.155000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 11
+[27336.155000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 10
+[27336.155000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 11
+[27336.163000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 12
+[27336.163000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 13
+[27336.163000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 12
+[27336.163000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 13
+[27336.167000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 14
+[27336.167000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 15
+[27336.167000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 14
+[27336.167000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 15
+[27336.171000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 16
+[27336.171000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 17
+[27336.171000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 16
+[27336.171000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 17
+[27336.175000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 18
+[27336.175000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 19
+[27336.179000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 18
+[27336.179000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 19
+[27336.183000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 20
+[27336.183000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 21
+[27336.183000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 20
+[27336.183000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 21
+[27336.187000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 22
+[27336.187000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 23
+[27336.191000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 23
+[27336.191000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 22
+[27336.194000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 24
+[27336.194000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 25
+[27336.202000] 2:5; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 25
+[27336.202000] 2:4; xsal_alloc_buffer.c:83; FAULT - No free buffer in pool 24
+[27336.202000] 2:0; test_buffer_pool.c:521; INFO_HI - Test PASSED
+[27336.402000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27336.523000] 2:0; test_clock.c:85; INFO_HI - Test PASSED
+
+[27336.714000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27336.780000] 2:0; test_message_queue.c:949; INFO_HI - Test PASSED
+[27336.980000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27341.690000] 2:0; test_mutex.c:1260; INFO_HI - Start Share Mutex Test at Priority 0
+[27344.819000] 2:0; test_mutex.c:1260; INFO_HI - Start Share Mutex Test at Priority 1
+[27347.948000] 2:0; test_mutex.c:1788; INFO_HI - Test PASSED
+[27348.149000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27348.191000] 2:1; test_publish.c:1016; INFO_HI - Subscribe/Unsubscribe to empty lists worked.
+[27348.191000] 2:2; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec2]: Start
+[27348.191000] 2:5; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[27348.191000] 2:4; test_publish.c:690; INFO_HI - Receive_Test 1_1[LRec4]: Start
+[27348.191000] 2:5; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec5]: Start
+[27348.191000] 2:3; test_publish.c:690; INFO_HI - Receive_Test 1_2[LRec3]: Start
+[27348.191000] 2:1; test_publish.c:839; INFO_HI - Publish_Test 1 Ok
+[27348.191000] 2:4; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec4]: Stop, ret = 0
+[27348.191000] 2:4; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec4]: Start
+[27348.191000] 2:2; test_publish.c:752; INFO_HI - Receive_Test1_1[LRec2]: Stop, ret = 0
+[27348.191000] 2:2; test_publish.c:690; INFO_HI - Receive_Test 3_1[LRec2]: Start
+[27348.191000] 2:5; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec5]: Stop, ret = 0
+[27348.191000] 2:5; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec5]: Start
+[27348.191000] 2:3; test_publish.c:752; INFO_HI - Receive_Test1_2[LRec3]: Stop, ret = 0
+[27348.191000] 2:3; test_publish.c:690; INFO_HI - Receive_Test 3_2[LRec3]: Start
+[27348.191000] 2:1; test_publish.c:839; INFO_HI - Publish_Test 3 Ok
+[27348.191000] 2:5; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec5]: Stop, ret = 0
+[27348.191000] 2:5; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec5]: Start
+[27348.191000] 2:2; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec2]: Stop, ret = 0
+[27348.191000] 2:2; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec2]: Start
+[27348.191000] 2:4; test_publish.c:752; INFO_HI - Receive_Test3_1[LRec4]: Stop, ret = 0
+[27348.191000] 2:3; test_publish.c:752; INFO_HI - Receive_Test3_2[LRec3]: Stop, ret = 0
+[27348.191000] 2:4; test_publish.c:690; INFO_HI - Receive_Test 5_1[LRec4]: Start
+[27348.191000] 2:3; test_publish.c:690; INFO_HI - Receive_Test 5_2[LRec3]: Start
+[27348.191000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 8 Data: 34333231 Size: 17
+[27348.191000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 8 Data: 34333231 Size: 17
+[27348.191000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 4 Event: 8 Data: 34333231 Size: 17
+[27348.191000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 5 Event: 8 Data: 34333231 Size: 17
+[27348.191000] 2:1; test_publish.c:839; INFO_HI - Publish_Test 5 Ok
+[27348.191000] 2:2; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec2]: Stop, ret = 0
+[27348.191000] 2:4; test_publish.c:752; INFO_HI - Receive_Test5_1[LRec4]: Stop, ret = 0
+[27348.191000] 2:5; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec5]: Stop, ret = 0
+[27348.191000] 2:3; test_publish.c:752; INFO_HI - Receive_Test5_2[LRec3]: Stop, ret = 0
+[27348.203000] 2:0; test_publish.c:1859; INFO_HI - Test PASSED
+[27348.446000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27348.488000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Data: 0 Size: 0
+[27348.488000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 0
+[27348.488000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Data: 0 Size: 0
+[27348.488000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 0
+[27348.496000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 3 Data: 0 Size: 0
+[27348.496000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 1
+[27348.500000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Data: 5 Size: 4
+[27348.500000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 2
+[27348.500000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Data: 5 Size: 4
+[27348.500000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 2
+[27348.504000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 2 Event: 1 Data: 5 Size: 4
+[27348.504000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 2, reason: 3
+[27348.504000] 2:1; xsal_i_publish.c:194; FAULT - Dropped Local Publish TID: 3 Event: 1 Data: 5 Size: 4
+[27348.504000] 2:1; test_publish_callback.c:203; FAULT - Message dropped in thread: 3, reason: 3
+[27348.508000] 2:0; test_publish_callback.c:1701; INFO_HI - Test PASSED
+[27348.727000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27349.512000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 500 for event 37
+[27350.012000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 500 for event 40
+[27351.012000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 1000 for event 40
+[27351.519000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 500 for event 37
+[27352.519000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 1000 for event 42
+[27353.019000] 2:5; test_receive_only.c:783; INFO_HI - Receive_Only_Thread_5: SAL_Receive_Only_Timeout suspends the thread, time: 500 for event 44
+[27353.019000] 2:0; test_receive_only.c:1437; INFO_HI - Test PASSED
+[27353.226000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27356.280000] 2:0; test_semaphore.c:900; INFO_HI - Test PASSED
+[27356.476000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27356.518000] 2:7; xsal_create_queue.c:105; FAULT - Requested message buffer size 512 is greater than max 64
+[27356.518000] 2:2; test_send.c:649; INFO_HI - Send_Test 1: 0
+[27356.518000] 2:1; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[27356.518000] 2:6; test_send.c:649; INFO_HI - Send_Test 1: 0
+[27356.518000] 2:4; test_send.c:649; INFO_HI - Send_Test 1: 0
+[27356.518000] 2:8; test_send.c:649; INFO_HI - Send_Test 1: 0
+[27356.518000] 2:3; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[27356.518000] 2:5; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[27356.518000] 2:7; test_send.c:589; INFO_HI - Receive_Test 1: 0
+[27356.518000] 2:4; test_send.c:649; INFO_HI - Send_Test 3: 0
+[27356.518000] 2:2; test_send.c:649; INFO_HI - Send_Test 3: 0
+[27356.518000] 2:8; test_send.c:649; INFO_HI - Send_Test 3: 0
+[27356.518000] 2:6; test_send.c:649; INFO_HI - Send_Test 3: 0
+[27356.518000] 2:3; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[27356.518000] 2:1; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[27356.518000] 2:7; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[27356.518000] 2:4; xsal_send.c:98; FAULT - Dropped Local Send TID: 3 Event: 5 Data: 0 Size: 0
+[27356.518000] 2:2; xsal_send.c:98; FAULT - Dropped Local Send TID: 1 Event: 5 Data: 0 Size: 0
+[27356.518000] 2:4; test_send.c:697; INFO_HI - Send_Test_5 0
+[27356.518000] 2:2; test_send.c:697; INFO_HI - Send_Test_5 0
+[27356.518000] 2:8; xsal_send.c:98; FAULT - Dropped Local Send TID: 7 Event: 5 Data: 0 Size: 0
+[27356.518000] 2:8; test_send.c:697; INFO_HI - Send_Test_5 0
+[27356.518000] 2:5; test_send.c:589; INFO_HI - Receive_Test 3: 0
+[27356.518000] 2:1; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[27356.518000] 2:6; xsal_send.c:98; FAULT - Dropped Local Send TID: 5 Event: 5 Data: 0 Size: 0
+[27356.518000] 2:6; test_send.c:697; INFO_HI - Send_Test_5 0
+[27356.518000] 2:5; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[27356.518000] 2:3; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[27356.518000] 2:7; test_send.c:589; INFO_HI - Receive_Test 5: 0
+[27356.530000] 2:0; test_send.c:1522; INFO_HI - Test PASSED
+[27356.726000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27356.768000] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 0 Size: 0
+[27356.768000] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 0
+[27356.780000] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 3 Data: 0 Size: 0
+[27356.780000] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 1
+[27356.784000] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[27356.784000] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 2
+[27356.788000] 2:1; xsal_send.c:98; FAULT - Dropped Local Send TID: 2 Event: 1 Data: 5 Size: 4
+[27356.788000] 2:1; test_send_callback.c:174; FAULT - Message dropped in thread: 2, reason: 3
+[27356.792000] 2:0; test_send_callback.c:1455; INFO_HI - Test PASSED
+[27357.007000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27361.444000] 2:14; xsal_send.c:98; FAULT - Dropped Local Send TID: 13 Event: 1 Data: 0 Size: 0
+[27362.850000] 2:0; test_thread.c:1782; INFO_HI - Test PASSED
+[27363.053000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27389.396000] 2:5; test_timer.c:1719; FAULT - Periodic_Ex_Test/ wrong ticks number: 7/10, 4/5
+[27389.396000] 2:0; test_timer.c:1811; INFO_HI - Test PASSED
+[27389.609000] 0:0; xsal_init.c:42; INFO_HI - XSAL 2012-12-04
+[27389.655000] 2:9; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:10; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:12; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:13; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:11; test_unknown_thread.c:151; INFO_HI - Thread number
+[27389.655000] 2:0; test_unknown_thread.c:421; INFO_HI - Test PASSED

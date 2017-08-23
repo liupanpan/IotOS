@@ -1,0 +1,16 @@
+// Please note -- this is a representative set of error suppression
+//                options.  Please adjust to suit your own policies
+//                See  manual (chapter LIVING WITH LINT)
+//                for further details.
+ 
+-e46	      // Field type should be int  
+-e537	      // Repeated include file 'FileName' 
+-e602	      // Comment within comment
+-e714	      // Symbol 'Symbol' (Location) not referenced
+-e755	      // global macro 'Symbol' (Location) not referenced
+-e756	      // global typedef 'Symbol' (Location) not referenced
+-e757	      // global declarator 'Symbol' (Location) not referenced
+-e768	      // global struct member 'Symbol' (Location) not referenced
+-e769	      // global enumeration constant 'Symbol' (Location) not referenced
+-e830	      // Location cited in prior message
+

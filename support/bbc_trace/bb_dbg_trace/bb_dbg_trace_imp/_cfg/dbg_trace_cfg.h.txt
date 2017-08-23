@@ -1,0 +1,326 @@
+#ifndef DBG_TRACE_CFG_H
+#   define DBG_TRACE_CFG_H
+/*===========================================================================*/
+/**
+ * @file dbg_trace_cfg.h
+ *
+ * Program configuration for the dbg_trace module implementation.
+ *
+ * %full_filespec: dbg_trace_cfg.h.txt~kok_inf#14:Text:kok_aud#1 %
+ * @version %version: kok_inf#14 %
+ * @author  %derived_by: dzq92s %
+ * @date    %date_modified: Fri Oct  4 13:21:15 2013 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2011-2013 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * @section DESC DESCRIPTION:
+ *
+ * @section ABBR ABBREVIATIONS:
+ *   - TR = trace
+ *
+ * @section TRACE TRACEABILITY INFO:
+ *   - Design Document(s):
+ *
+ *   - Requirements Document(s):
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - <a href="http://kogespw1.delcoelect.com:8508/passthru/consumer?name=SW%
+20REF%20264.15D&doctype=K8DBSDoc">
+ *       SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]</a>
+ *
+ * @section DFS DEVIATIONS FROM STANDARDS:
+ *   - None
+ *
+ * @addtogroup dbg_trace
+ * @{
+ */
+/*==========================================================================*/
+
+#error "Verify configuration for application"
+
+/*===========================================================================*
+ * Header Files
+ *===========================================================================*/
+#   include "reuse.h"
+
+/*===========================================================================*
+ * #define Constants
+ *===========================================================================*/
+
+/*===========================================================================*
+ * #define MACROS
+ *===========================================================================*/
+
+/**
+ * Set DBG_USE_PID_TID_NAMES to a non-zero value to use Linux's process/thread
+ * names in log messages instead of the PID/TID numbers; set to zero (or
+ * leave undefined) to use the numbers instead.
+ */
+/*#   define DBG_USE_PID_TID_NAMES 0*/
+
+/**
+ * Declaring DBG_DISABLE_STDOUT disables logging of trace information
+ * to stdout. Leave this declaration commented out unless you wish to disable
+ * logging to stdout. Note that default behavior (DBG_DISABLE_STDOUT not
+ * declared) is for trace output to go to stdout.
+ */
+/*#   define DBG_DISABLE_STDOUT true*/
+
+/**
+ * Enables the logic that uses POSIX file I/O to read/save the dbg_trace levels.
+ * To enable, define this value to be true. To disable, either do not define
+ * this symbol or define it to be false. If this feature is disabled, the
+ * functions still exist; however, they do nothing. This is for support of
+ * systems that do not support POSIX file I/O.
+ */
+#   define DBG_ENABLE_POSIX_LVL_IO true
+
+/**
+ * Enables the printout of the call stack backtrace of an assert. This enables
+ * easier debugging of software that results in an assert. To enable the
+ * call stack backtrace define this value to be true. To disable, either do
+ * not define this symbol or define it to be false.
+ */
+#   define DBG_ENABLE_STACK_BACKTRACE true
+
+/**
+ * Declaring DBG_ENABLE_SYSLOG enables logging of trace information to syslog.
+ * Leave this declaration commented out unless you wish to enable syslog. You
+ * can have both syslog and stdout enabled simultaneously (the trace output will
+ * go to both locations). Note that the default behavior (DBG_ENABLE_SYSLOG
+ * not declared) is for trace output to NOT go to sysglog. For QNX, this
+ * controls slogger, not syslog.
+ */
+/*#  define DBG_ENABLE_SYSLOG true*/
+
+/**
+ * Maximum trace line length before truncation occurs; affects stack depth.
+ */
+#   define DBG_TRACE_MAX_LINE_LENGTH 256 
+
+/**
+ * Set to true to build dbg_trace without any dependence on the RTOS. If,
+ * instead, it is desired that the trace information contain thread and
+ * clock information from the RTOS, then set the value to false.
+ */
+#   define TR_STAND_ALONE   false
+
+/**
+ * Define this symbol to true to enable per-thread CPU time (in addition to clock
+ * time) on systems that support it.
+ */
+#   define DBG_USE_THREAD_CPU_TIME true
+
+/**
+ * Set this to true to switch from a 32-bit to 64-bit timestamp for both the
+ * regulare and CPU times.
+ */
+#   define DBG_ENABLE_64BIT_TIMESTAMP false
+
+/**
+ * Set the default run-time trace level
+ */
+#   define TR_DEFAULT_RUNTIME_INFO_LEVEL  TR_LVL_INFO_HI
+
+/**
+ * Use TR_MODULE_LEVEL to associate the initial trace level with a module ID.
+ */
+#   define TR_MODULE_LEVEL(ID, init_lvl)
+
+/**
+ * Use TR_MODULE_LEVEL_EQ to associate the initial trace level with a module ID
+ * that needs to be assigned a specific value.
+ */
+#   define TR_MODULE_LEVEL_EQ(ID, id_value, init_lvl)
+
+/**
+ * This X MACRO assigns initial trace levels to the project-specific list of
+ * modules. This list must match (in order and size) the X MACRO declaring the
+ * module ids for the system in the API configuration header file
+ * (Tr_Module_IDs). If it does not match, the compiler will fail to build
+ * the dbg_trace implementation. Because the values for the level settings in
+ * this X MACRO only affect the dbg_trace implementation, they can be changed
+ * without causing a re-build of all modules in the system. This is the reason
+ * for separating these settings from the API modules list. If modules are added
+ * or deleted (or the order changed), then both this X MACRO and the
+ * corresponding X MACRO in the API will have to change.
+ */
+#   define TR_MODULE_LEVELS \
+   TR_MODULE_LEVEL(ALLGO_GATEWAY_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AM_FM_DRV_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AM_FM_MNGR_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(APPLICATION_MANAGER_MODULE_ID     , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(ARC_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(ASR_MGR_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AUDIO_MODULE_ID                   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AUDIO_VIDEO_PLAYER_MODULE_ID      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AUMGR_MODULE_ID                   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AUMUTEMGR_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(AUX_JACK_ENGINE_MODULE_ID         , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(BASE_DRIVERS_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(BTSTRM_VPD_ENGINE_MODULE_ID       , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(BLUETOOTH_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(BUC_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CALLOUTS_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CD_PLAYBACK_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CDE_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CONN_MGR_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CONN_APP_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CONN_UPNP_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CONN_VNC_HDLR_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(CONN_TM_EXT_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DATABASE_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DBG_TRACE_MODULE_ID               , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(DIMMING_GM_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DISC_PBK_PROCESS_HDLR_MODULE_ID   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DVD_OS_CALLS_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DVD_PLAYBACK_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(DVD_VIDEO_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(FBL_LINKER_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(HD_RADIO_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(HMI_APPS_MODULE_ID                , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_BLUETOOTH_MODULE_ID           , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_CORE_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(HMI_INPUT_HANDLER_MODULE_ID       , TR_LVL_INFO_MID              ) \
+   TR_MODULE_LEVEL(HMI_NAVIGATION_MODULE_ID          , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_ONSTAR_MODULE_ID              , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_PLAYBACK_MODULE_ID            , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_SETTINGS_MODULE_ID            , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_SYSTEM_MODULE_ID              , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_TUNER_MODULE_ID               , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_VEHICLE_MODULE_ID             , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HMI_VUI_MODULE_ID                 , TR_LVL_INFO_HI               ) \
+   TR_MODULE_LEVEL(HSM_ENGINE_MODULE_ID              , TR_LVL_INFO_LO               ) \
+   TR_MODULE_LEVEL(HUD_ROUTER_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(ICR_ENG_CALS_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(ICR_INTEGRATED_APPS_TEST_MODULE_ID, TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IDM_AAS_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IDM_COM_DRVR_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IDM_COM_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IDM_SIS_PSD_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(INTERRUPTS_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IO_MODULE_ID                      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(IPODE_MODULE_ID                   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(METADATA_HDLR_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(MSD_VPD_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(MTPE_VPD_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(MUSIC_BROWSER_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(NAV_CORE_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(NAV_GPS_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(NAV_SAL_MSG_RCV_MODULE_ID         , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(OI_MODULE_ID                      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PCM_STREAM_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PNDR_ICR_SVC_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PANDORA_APP_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PERSISTENT_STORAGE_MODULE_ID      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PITS_MODULE_ID                    , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PITS_MODULE_ID_2                  , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PITS_MODULE_ID_5                  , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PITS_MODULE_ID_XSAL               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PHONEBOOKDB_CONTACT_MODULE_ID     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PHONEBOOKDB_PROXY_MODULE_ID       , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PHONEBOOKDB_SERVER_MODULE_ID      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PHRED_MODULE_ID                   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PLAYBACK_BEHAVIORS_MODULE_ID      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PLAYBACK_BEHAVIORS_MODULE_ID_2    , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PLAYBACK_IIC_SERVICE_MODULE_ID    , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PLAYBACK_VIRTUAL_DEVICE_MODULE_ID , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PPE_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PPE_PROXY_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PRESET_MANAGER_MODULE_ID          , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PROCESS_HANDLER_MODULE_ID         , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PROCMAN_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(PROMPT_MGR_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(RDS_DECODER_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(REAR_AUX_ENGINE_MODULE_ID         , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(REMOTE_DEV_APP_MGR_MODULE_ID      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(REMRCVR_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(RSA_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(RSE_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(RVS_GUIDELINES_MODULE_ID          , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(SOH_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(SSM_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(SWC_MODULE_ID                     , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(TEST_MODULE_ID                    , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(THEFT_MODULE_ID                   , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(TUNER_MGR_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(UTILITIES_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VIDEO_CONTROL_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VIDEO_SWITCHER_MODULE_ID          , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VIP_DESIP_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VIP_PS_INTERFACE_MODULE_ID        , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VO_MODULE_ID                      , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VUI_ADAPTOR_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VUI_DIAG_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VUI_MANAGER_1_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(VUI_MANAGER_2_MODULE_ID           , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(WIFI_MANAGER_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XENA_GATEWAY_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_BUFFER_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_CONDVAR_MODULE_ID            , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_IPC_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_MSG_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_MSG2_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_MUTEX_MODULE_ID              , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_NS_MODULE_ID                 , TR_LVL_FAULT                 ) \
+   TR_MODULE_LEVEL(XSAL_Q_MODULE_ID                  , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_RWLOCK_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_SEM_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_SHM_MODULE_ID                , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_THREAD_MODULE_ID             , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_TIME_MODULE_ID               , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSAL_UTILITIES_MODULE_ID          , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSALCPP_MODULE_ID                 , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   TR_MODULE_LEVEL(XSALMT_MODULE_ID                  , TR_DEFAULT_RUNTIME_INFO_LEVEL) \
+   /* end of X-macro (do NOT remove this line) */
+
+/*===========================================================================*
+ * Custom Type Declarations
+ *===========================================================================*/
+
+
+/*===========================================================================*/
+/*!
+ * @file dbg_trace_cfg.h
+ *
+ * @section RH REVISION HISTORY (top to bottom: first revision to last revision)
+ *
+ * - 10-jan-2011 kirk bailey Rev. 3
+ *   - Task 19507 - Updated template with new XSAL module ids.
+ *
+ * - 25-jan-2011 kirk bailey Rev. 4
+ *   - Task 17849 - Added syslog support and ability to disable stdout.
+ *
+ * - 07-may-2011 Kris Boultbee
+ *   Task kok_basa#30633 Revision 6
+ *   - Added configuration to allow for the printing of a Call Stack 
+ *     Backtrace whenever a PBC test fails.
+ *
+ * - 10-May-2012 kirk bailey Rev. 9
+ *   - Added option for thread CPU time.
+ *
+ * - 28-Feb-2013 Kirk Bailey Rev. 10
+ *   - Fixed spelling.
+ *
+ * - 12-Mar-2013 Kirk Bailey Rev. 11
+ *   - Added DBG_ENABLE_64BIT_TIMESTAMP.
+ *
+ * - 03-Oct-2013 Kirk Bailey REV 12
+ *   - Fixed order of revision history comments - no functional changes
+ *   - Eliminate revision history prior to 2011
+ *
+ *  - 03-Oct-2013 Kirk Bailey REV 13
+ *   -  Added DBG_USE_PID_TID_NAMES option to use process/thread names instead
+ *      of numbers.
+ *
+ *  - 04-Oct-2013 Kirk Bailey REV 14
+ *   -  Improved comment for DBG_USE_PID_TID_NAMES.
+ *
+ *===========================================================================*/
+/** @} doxygen end group */
+#endif /* DBG_TRACE_CFG_H */

@@ -1,0 +1,136 @@
+#ifndef GPIO_INTERRUPTS_ACFG_H
+#   define GPIO_INTERRUPTS_ACFG_H
+/*===========================================================================*/
+/**
+ * @file gpio_interrupts_acfg.h
+ *
+ * %full_filespec: gpio_interrupts_acfg.h.txt-1:Text:kok_aud#1 %
+ * @version %version: 1 %
+ * @author  %derived_by: jz4fpf %
+ * @date    %date_modified: Fri May  4 15:53:20 2007 %
+ *
+ *---------------------------------------------------------------------------
+ *
+ * Copyright 2006 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *---------------------------------------------------------------------------
+ *
+ * @brief Micro specific (SH2A) types for Standard GPIO Interrupts APIs
+ *
+ * DESCRIPTION :
+ *    This file defines the micro specific interrupts types for SH2A
+ *       - GPIO_Interrupt_ID_T     - GPIO interrupt ID
+ *       - Interrupt_Config_T      - GPIO interrupts configuration
+ *
+ * ABBREVIATIONS:
+ *
+ * TRACEABILITY INFO:
+ *   - Design Document(s):
+ *     - REJ09B0290-0050 Renesas SH7263 Group Hardware Manual
+ *
+ *   - Requirements Document(s):
+ *     - @todo Update list of requirements document(s)
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]
+ *
+ * DEVIATIONS FROM STANDARDS:
+ *    - None
+ *
+ */
+/*==========================================================================*/
+
+#error "THIS IS A TEMPLATE CFG FILE. PLEASE CONFIGURE FOR YOUR SYSTEM."
+
+/*===========================================================================*\
+ * Standard Header Files
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Other Header Files
+\*===========================================================================*/
+#include "itron.h"
+#include "kernel.h"
+#include "kernel_id.h"
+#include "kernel_sys.h"
+#include "kernel_cfg_main.h"
+#include "hi_ext.h"
+#include "iodefine.h"
+
+/*===========================================================================*\
+ * Exported Preprocessor #define Constants
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Exported Preprocessor #define MACROS
+\*===========================================================================*/
+
+/*===========================================================================*\
+ * Exported Type Declarations
+\*===========================================================================*/
+
+/**
+ * List of potential GPIO interrupts
+ */
+typedef enum GPIO_Interrupt_ID_Tag
+{
+   GPIO_PB0_IRQ,                     /**< Port B0  - IRQ0 */
+   GPIO_PB1_IRQ,                     /**< Port B1  - IRQ1 */
+   GPIO_PB2_IRQ,                     /**< Port B2  - IRQ2 */
+   GPIO_PB3_IRQ,                     /**< Port B3  - IRQ3 */
+   GPIO_PB4_IRQ,                     /**< Port B4  - IRQ4 */
+   GPIO_PB5_IRQ,                     /**< Port B5  - IRQ5 */
+   GPIO_PB6_IRQ,                     /**< Port B6  - IRQ6 */
+   GPIO_PB7_IRQ,                     /**< Port B7  - IRQ7 */
+
+   GPIO_PB0_PINT,                    /**< Port B0  - PINT0 */
+   GPIO_PB1_PINT,                    /**< Port B1  - PINT1 */
+   GPIO_PB2_PINT,                    /**< Port B2  - PINT2 */
+   GPIO_PB3_PINT,                    /**< Port B3  - PINT3 */
+   GPIO_PB4_PINT,                    /**< Port B4  - PINT4 */
+   GPIO_PB5_PINT,                    /**< Port B5  - PINT5 */
+   GPIO_PB6_PINT,                    /**< Port B6  - PINT6 */
+   GPIO_PB7_PINT,                    /**< Port B7  - PINT7 */
+
+   GPIO_PD0_IRQ,                     /**< Port D0  - IRQ0 */
+   GPIO_PD1_IRQ,                     /**< Port D1  - IRQ1 */
+   GPIO_PD2_IRQ,                     /**< Port D2  - IRQ2 */
+   GPIO_PD3_IRQ,                     /**< Port D3  - IRQ3 */
+   GPIO_PD4_IRQ,                     /**< Port D4  - IRQ4 */
+   GPIO_PD5_IRQ,                     /**< Port D5  - IRQ5 */
+   GPIO_PD6_IRQ,                     /**< Port D6  - IRQ6 */
+   GPIO_PD7_IRQ,                     /**< Port D7  - IRQ7 */
+
+   GPIO_PD8_PINT,                    /**< Port D8  - PINT0 */
+   GPIO_PD9_PINT,                    /**< Port D9  - PINT1 */
+   GPIO_PD10_PINT,                   /**< Port D10 - PINT2 */
+   GPIO_PD11_PINT,                   /**< Port D11 - PINT3 */
+   GPIO_PD12_PINT,                   /**< Port D12 - PINT4 */
+   GPIO_PD13_PINT,                   /**< Port D13 - PINT5 */
+   GPIO_PD14_PINT,                   /**< Port D14 - PINT6 */
+   GPIO_PD15_PINT,                   /**< Port D15 - PINT7 */
+
+   GPIO_PE4_IRQ,                     /**< Port E4  - IRQ0 */
+   GPIO_PE5_IRQ,                     /**< Port E5  - IRQ1 */
+   GPIO_PE6_IRQ,                     /**< Port E6  - IRQ2 */
+   GPIO_PE7_IRQ,                     /**< Port E7  - IRQ3 */
+   GPIO_PE8_IRQ,                     /**< Port E8  - IRQ4 */
+   GPIO_PE9_IRQ,                     /**< Port E9  - IRQ5 */
+   GPIO_PE10_IRQ,                    /**< Port E10 - IRQ6 */
+   GPIO_PE11_IRQ,                    /**< Port E11 - IRQ7 */
+
+   GPIO_INT_ID_NUM_VALUES     /* Total number of Pins that can be set as GPIO Interrupts */
+} GPIO_Interrupt_ID_T;
+
+/*===========================================================================*\
+ * File Revision History (top to bottom: first revision to last revision)
+ *===========================================================================
+ *
+ * Date        userid    (Description on following lines: SCR #, etc)
+ * ----------- --------
+ * 2007-01-26  LKO
+ * + Created initial file.
+ *
+\*===========================================================================*/
+#endif /* GPIO_INTERRUPTS_ACFG_H */

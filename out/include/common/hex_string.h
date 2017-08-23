@@ -1,0 +1,1 @@
+../../../support/bbc_util/bb_hex_string/bb_hex_string_api/hex_string.h

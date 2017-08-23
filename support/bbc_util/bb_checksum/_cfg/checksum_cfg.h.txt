@@ -1,0 +1,94 @@
+#ifndef CHECKSUM_CFG_H
+#   define CHECKSUM_CFG_H
+/*===========================================================================*/
+/**
+ * @file checksum_cfg.h
+ *
+ *   Configuration options for bb_checksum
+ *
+ * %full_filespec: checksum_cfg.h.txt~2:Text:kok_basa#1 %
+ * @version %version: 2 %
+ * @author  %derived_by: czhswm %
+ * @date    %date_modified: Wed Jul 17 14:12:22 2013 %
+ *
+ *------------------------------------------------------------------------------
+ *
+ * Copyright 2011 Delphi Technologies, Inc., All Rights Reserved.
+ * Delphi Confidential
+ *
+ *------------------------------------------------------------------------------
+ *
+ * @section DESC DESCRIPTION:
+ *
+ * This file has the project specific options for the checksum:
+ *    These options are:
+ *          Checksum prohibits NULL addresses
+ *
+ * @section ABBR ABBREVIATIONS:
+ *   - none
+ *
+ * @section TRACE TRACEABILITY INFO:
+ *   - Design Document(s):
+ *
+ *   - Requirements Document(s):
+ *     - BASA RTOS SERVICES Software Requirement Specification
+ *
+ *   - Applicable Standards (in order of precedence: highest first):
+ *     - <a href="http://kogespw1.delcoelect.com:8508/passthru/consumer?name=SW%20REF%20264.15D&doctype=K8DBSDoc">
+ *       SW REF 264.15D "Delphi C Coding Standards" [12-Mar-2006]</a>
+ *
+ * @section DFS DEVIATIONS FROM STANDARDS:
+ *   - None
+ *
+ */
+/*==========================================================================*/
+
+#error "This is a template file. Please configure for your system."
+
+/*===========================================================================*
+ * Header Files
+ *===========================================================================*/
+
+/*===========================================================================*
+ * #define Constants
+ *===========================================================================*/
+
+/**
+ * Defines whether checksum routines will allow the start address to be 0.
+ * A NULL address may be allowed in systems that allow direct addressing to
+ * address 0, so this define can be set to false.  If set to true, the checksum
+ * functions will fail PBC checks for NULL addresses.
+ */
+/*#   define CHKS_NULL_ADDRESS_PROHIBITED (true)*/
+
+/*===========================================================================*\
+ * #define MACROS
+\*===========================================================================*/
+
+#   ifdef __cplusplus
+extern "C"
+{
+#   endif                       /* __cplusplus */
+/*===========================================================================*\
+ * Custom Type Declarations
+\*===========================================================================*/
+
+/*===========================================================================*/
+/*!
+ * @file checksum_cfg.h
+ *
+ * @section RH REVISION HISTORY (top to bottom: last revision to first revision)
+ *
+ * - 17-Jul-2013 Larry Piekarski Rev 2
+ *   - Task 160933: Renamed util_cfg.h to checksum_cfg.h to support the
+ *     conversion of bb_util into a building block cluster.
+ *
+ * 4Nov11  David Origer  Rev 1
+ * SCR kok_basa#17494 : Allow use of NULL pointer for checksums when used in
+ *    200C systems.
+ */
+/*===========================================================================*/
+#   ifdef __cplusplus
+}                               /* extern "C" */
+#   endif                       /* __cplusplus */
+#endif                          /* CHECKSUM_CFG_H */
